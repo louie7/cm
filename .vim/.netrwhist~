@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/remote/us01home27/yilu/iStage/COURSE/synmake/synmake_train/02/synmake/snps/rules'
+let g:netrw_dirhist_2='/remote/us01home27/yilu/laker_waive/puri_0220'
+let g:netrw_dirhist_3='/remote/us01home27/yilu'
+let g:netrw_dirhist_4='/remote/us01home27/yilu/iStage'
+let g:netrw_dirhist_5='/remote/us01home27/yilu/iStage/XA'
+let g:netrw_dirhist_6='/remote/us01home27/yilu/iStage/XA/xa'
+let g:netrw_dirhist_7='/remote/us01home27/yilu/iStage/XA/xa/tools'

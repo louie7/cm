@@ -1,0 +1,1013 @@
+$	maintainer.mak	/^		| $(RPM_DIRS)$/
+$(CTAGS_EXEC)	Makefile	/^$(CTAGS_EXEC): $(OBJECTS)$/
+$(DEST_CMAN)	Makefile	/^$(DEST_CMAN): $(man1dir) $(MANPAGE) FORCE$/
+$(DEST_CTAGS)	Makefile	/^$(DEST_CTAGS): $(CTAGS_EXEC) $(bindir) FORCE$/
+$(DEST_EMAN)	Makefile	/^$(DEST_EMAN):$/
+$(DEST_ETAGS)	Makefile	/^$(DEST_ETAGS):$/
+$(DEST_READ_INC)	Makefile	/^$(DEST_READ_INC): $(READ_INC) $(incdir) FORCE$/
+$(DEST_READ_LIB)	Makefile	/^$(DEST_READ_LIB): $(READ_LIB) $(libdir) FORCE$/
+$(OBJECTS)	Makefile	/^$(OBJECTS): $(HEADERS) config.h$/
+$(bindir) $(man1dir) $(libdir) $(incdir)	Makefile	/^$(bindir) $(man1dir) $(libdir) $(incdir):$/
+.SUFFIXES	Makefile	/^.SUFFIXES:$/
+.c.$(OBJEXT)	Makefile	/^.c.$(OBJEXT):$/
+AC_CHECK_FUNCS	configure.ac	/^	AC_CHECK_FUNCS(tempnam, have_tempnam=yes)$/
+AC_CHECK_PROG	configure.ac	/^AC_CHECK_PROG(STRIP, strip, strip, :)$/
+AC_DEFINE	configure.ac	/^	AC_DEFINE(MACROS_USE_PATTERNS)$/
+AC_EGREP_HEADER	configure.ac	/^		AC_EGREP_HEADER(putenv, stdlib.h, have_putenv_pr/
+AC_MSG_CHECKING	configure.ac	/^			AC_MSG_CHECKING(Solaris native compiler)$/
+AC_MSG_RESULT	configure.ac	/^	AC_MSG_RESULT($tmpdir)$/
+AntParser	ant.c	/^extern parserDefinition* AntParser ()$/
+AsmParser	asm.c	/^extern parserDefinition* AsmParser (void)$/
+AspParser	asp.c	/^extern parserDefinition* AspParser (void)$/
+Assert	debug.h	/^# define Assert(c)         assert(c)$/
+AwkParser	awk.c	/^extern parserDefinition* AwkParser ()$/
+BasicParser	basic.c	/^parserDefinition *BasicParser (void)$/
+BetaParser	beta.c	/^extern parserDefinition* BetaParser (void)$/
+CHECK_HEADER_DEFINE	configure.ac	/^	CHECK_HEADER_DEFINE(SEEK_SET, stdio.h,,$/
+CHECK_PROTO	configure.ac	/^	CHECK_PROTO(remove, stdio.h)$/
+CParser	c.c	/^extern parserDefinition* CParser (void)$/
+CobolParser	cobol.c	/^extern parserDefinition* CobolParser ()$/
+Copyright	COPYING	/^    Copyright (C) 19yy  <name of author>$/
+CppParser	c.c	/^extern parserDefinition* CppParser (void)$/
+CsharpParser	c.c	/^extern parserDefinition* CsharpParser (void)$/
+DebugStatement	debug.h	/^# define DebugStatement(x) x$/
+DosBatchParser	dosbatch.c	/^extern parserDefinition* DosBatchParser ()$/
+ELF	lisp.o	/^ELF$/
+EiffelParser	eiffel.c	/^extern parserDefinition* EiffelParser (void)$/
+ErlangParser	erlang.c	/^extern parserDefinition *ErlangParser (void)$/
+FORCE	Makefile	/^FORCE:$/
+FlexParser	flex.c	/^extern parserDefinition* FlexParser (void)$/
+FortranParser	fortran.c	/^extern parserDefinition* FortranParser (void)$/
+HtmlParser	html.c	/^extern parserDefinition* HtmlParser (void)$/
+JavaParser	c.c	/^extern parserDefinition* JavaParser (void)$/
+JavaScriptParser	jscript.c	/^extern parserDefinition* JavaScriptParser (void)$/
+KIND_COUNT	parse.h	/^#define KIND_COUNT(kindTable) (sizeof(kindTable)\/s/
+L_getit	lisp.c	/^static void L_getit (vString *const name, const un/
+L_isdef	lisp.c	/^static int L_isdef (const unsigned char *strp)$/
+L_isquote	lisp.c	/^static int L_isquote (const unsigned char *strp)$/
+LispParser	lisp.c	/^extern parserDefinition* LispParser (void)$/
+LuaParser	lua.c	/^extern parserDefinition* LuaParser (void)$/
+MakefileParser	make.c	/^extern parserDefinition* MakefileParser (void)$/
+MatLabParser	matlab.c	/^extern parserDefinition* MatLabParser ()$/
+Meiffel	eiffel.c	/^extern int main (int argc, char** argv)$/
+Mmain	main.c	/^extern int main (int __unused__ argc, char **argv)/
+Mreadtags	readtags.c	/^extern int main (int argc, char **argv)$/
+OcamlParser	ocaml.c	/^extern parserDefinition *OcamlParser (void)$/
+PascalParser	pascal.c	/^extern parserDefinition* PascalParser (void)$/
+PerlParser	perl.c	/^extern parserDefinition* PerlParser (void)$/
+PhpParser	php.c	/^extern parserDefinition* PhpParser (void)$/
+PrintStatus	debug.h	/^# define PrintStatus(x)    if (debug(DEBUG_STATUS)/
+Program	COPYING	/^with the Program (or with a work based on the Prog/
+PythonParser	python.c	/^extern parserDefinition *PythonParser (void)$/
+RexxParser	rexx.c	/^extern parserDefinition* RexxParser (void)$/
+RubyParser	ruby.c	/^extern parserDefinition* RubyParser (void)$/
+S_ISBLK	e_mac.h	/^#define	S_ISBLK(mode)  S_ISTYPE((mode), S_IFBLK)$/
+S_ISCHR	e_mac.h	/^#define	S_ISCHR(mode)  S_ISTYPE((mode), S_IFCHR)$/
+S_ISDIR	e_mac.h	/^#define	S_ISDIR(mode)  S_ISTYPE((mode), S_IFDIR)$/
+S_ISLNK	routines.c	/^#  define S_ISLNK(mode)		(((mode) & S_IFMT) == S_I/
+S_ISREG	e_mac.h	/^#define	S_ISREG(mode)  S_ISTYPE((mode), S_IFREG)$/
+S_ISTYPE	e_mac.h	/^#define	S_ISTYPE(mode, mask)  (((mode) & S_IFMT) =/
+SchemeParser	scheme.c	/^extern parserDefinition* SchemeParser (void)$/
+ShParser	sh.c	/^extern parserDefinition* ShParser (void)$/
+SlangParser	slang.c	/^extern parserDefinition* SlangParser (void)$/
+SmlParser	sml.c	/^extern parserDefinition *SmlParser (void)$/
+SqlParser	sql.c	/^extern parserDefinition* SqlParser (void)$/
+TAGS	Makefile	/^TAGS: $(CTAGS_EXEC)$/
+TclParser	tcl.c	/^extern parserDefinition* TclParser (void)$/
+TexParser	tex.c	/^extern parserDefinition* TexParser (void)$/
+UNUSED	ocaml.c	/^# define UNUSED(x) UNUSED_ ## x __attribute__((unu/
+UrVpU7rrfFs8X	c.o	/^+r³V8,1ÿUrVpU7rrfFs8X5U‘(rrrl·ŽrœXry/
+VeraParser	c.c	/^extern parserDefinition* VeraParser (void)$/
+VerilogParser	verilog.c	/^extern parserDefinition* VerilogParser (void)$/
+VhdlParser	vhdl.c	/^extern parserDefinition *VhdlParser (void)$/
+VimParser	vim.c	/^extern parserDefinition* VimParser (void)$/
+Vâ	options.o	/^9.`[«œ Ó;tUT!Œt`p[«œœœœœœœœœ«©m/
+Wƒútöƒ	fortran.o	/^tNƒøtƒøt[Ã‹Wƒútöƒú9tñƒøtCH‰ßèïþÿÿ‹ƒøt(ƒø/
+YaccParser	yacc.c	/^extern parserDefinition* YaccParser ()$/
+__printf__	general.h	/^# define __printf__(s,f)  __attribute__((format (p/
+absoluteDirname	routines.c	/^extern char* absoluteDirname (char *file)$/
+absoluteFilename	routines.c	/^extern char* absoluteFilename (const char *file)$/
+accessField	c.c	/^static const char* accessField (const statementInf/
+accessString	c.c	/^static const char *accessString (const accessType /
+activeToken	c.c	/^#define activeToken(st)     ((st)->token [(int) (s/
+addCallbackRegex	lregex.c	/^extern void addCallbackRegex ($/
+addCompiledCallbackPattern	lregex.c	/^static void addCompiledCallbackPattern ($/
+addCompiledTagPattern	lregex.c	/^static void addCompiledTagPattern ($/
+addContext	c.c	/^static void addContext (statementInfo *const st, c/
+addContextSeparator	c.c	/^static void addContextSeparator (vString *const sc/
+addExtensionFields	entry.c	/^static int addExtensionFields (const tagEntryInfo /
+addExtensionList	options.c	/^static void addExtensionList ($/
+addGenericName	eiffel.c	/^static void addGenericName (tokenInfo *const token/
+addIgnoreListFromFile	options.c	/^static void addIgnoreListFromFile (const char *con/
+addKeyword	keyword.c	/^extern void addKeyword (const char *const string, /
+addLanguageExtensionMap	parse.c	/^extern void addLanguageExtensionMap ($/
+addLanguageMap	options.c	/^static char* addLanguageMap (const langType langua/
+addLanguagePatternMap	parse.c	/^extern void addLanguagePatternMap (const langType /
+addLanguageRegex	lregex.c	/^extern void addLanguageRegex ($/
+addNestingLevel	python.c	/^static void addNestingLevel(NestingLevels *nls, in/
+addOtherFields	c.c	/^static void addOtherFields (tagEntryInfo* const ta/
+addParentClass	c.c	/^static void addParentClass (statementInfo *const s/
+addPseudoTags	entry.c	/^static void addPseudoTags (void)$/
+addTag	ocaml.c	/^static void addTag (vString * const ident, int kin/
+addTagRegex	lregex.c	/^extern void addTagRegex ($/
+addToScope	flex.c	/^static void addToScope (tokenInfo* const token, vS/
+addTotals	main.c	/^extern void addTotals ($/
+add_item	argproc.c	/^static add_item (head, tail, value, count)$/
+advanceToken	c.c	/^static void advanceToken (statementInfo* const st)/
+all	Makefile	/^all: $(CTAGS_EXEC) $(READ_LIB)$/
+analyzeIdentifier	c.c	/^static void analyzeIdentifier (tokenInfo *const to/
+analyzeKeyword	c.c	/^static keywordId analyzeKeyword (const char *const/
+analyzeOperator	asm.c	/^static opKeyword analyzeOperator (const vString *c/
+analyzeParens	c.c	/^static void analyzeParens (statementInfo *const st/
+analyzePostParens	c.c	/^static void analyzePostParens (statementInfo *cons/
+analyzeToken	keyword.c	/^extern int analyzeToken (vString *const name, lang/
+ancestorClear	fortran.c	/^static void ancestorClear (void)$/
+ancestorCount	fortran.c	/^#define ancestorCount() (Ancestors.count)$/
+ancestorPop	fortran.c	/^static void ancestorPop (void)$/
+ancestorPush	fortran.c	/^static void ancestorPush (tokenInfo *const token)$/
+ancestorScope	fortran.c	/^static const tokenInfo* ancestorScope (void)$/
+ancestorTop	fortran.c	/^static const tokenInfo* ancestorTop (void)$/
+argDelete	args.c	/^extern void argDelete (Arguments* const current)$/
+argForth	args.c	/^extern void argForth (Arguments* const current)$/
+argItem	args.c	/^extern char *argItem (const Arguments* const curre/
+argNewFromArgv	args.c	/^extern Arguments* argNewFromArgv (char* const* con/
+argNewFromFile	args.c	/^extern Arguments* argNewFromFile (FILE* const fp)$/
+argNewFromLineFile	args.c	/^extern Arguments* argNewFromLineFile (FILE* const /
+argNewFromString	args.c	/^extern Arguments* argNewFromString (const char* co/
+argOff	args.c	/^extern boolean argOff (const Arguments* const curr/
+argSetLineMode	args.c	/^extern void argSetLineMode (Arguments* const curre/
+argSetWordMode	args.c	/^extern void argSetWordMode (Arguments* const curre/
+background_process	argproc.c	/^background_process (argc, argv)$/
+baseFilename	routines.c	/^extern const char *baseFilename (const char *const/
+beginEtagsFile	entry.c	/^extern void beginEtagsFile (void)$/
+boolString	c.c	/^#define boolString(c)   ((c) ? "TRUE" : "FALSE")$/
+buildAsmKeywordHash	asm.c	/^static void buildAsmKeywordHash (void)$/
+buildEiffelKeywordHash	eiffel.c	/^static void buildEiffelKeywordHash (void)$/
+buildFlexKeywordHash	flex.c	/^static void buildFlexKeywordHash (void)$/
+buildFortranKeywordHash	fortran.c	/^static void buildFortranKeywordHash (void)$/
+buildJsKeywordHash	jscript.c	/^static void buildJsKeywordHash (void)$/
+buildKeywordHash	c.c	/^static void buildKeywordHash (const langType langu/
+buildSqlKeywordHash	sql.c	/^static void buildSqlKeywordHash (void)$/
+buildTexKeywordHash	tex.c	/^static void buildTexKeywordHash (void)$/
+cArgDelete	options.c	/^extern void cArgDelete (cookedArgs* const current)/
+cArgForth	options.c	/^extern void cArgForth (cookedArgs* const current)$/
+cArgIsOption	options.c	/^extern boolean cArgIsOption (cookedArgs* const cur/
+cArgItem	options.c	/^extern const char* cArgItem (cookedArgs* const cur/
+cArgNewFromArgv	options.c	/^extern cookedArgs* cArgNewFromArgv (char* const* c/
+cArgNewFromFile	options.c	/^extern cookedArgs* cArgNewFromFile (FILE* const fp/
+cArgNewFromLineFile	options.c	/^extern cookedArgs* cArgNewFromLineFile (FILE* cons/
+cArgNewFromString	options.c	/^extern cookedArgs* cArgNewFromString (const char* /
+cArgOff	options.c	/^extern boolean cArgOff (cookedArgs* const current)/
+cArgOptionPending	options.c	/^static boolean cArgOptionPending (cookedArgs* cons/
+cArgRead	options.c	/^static void cArgRead (cookedArgs *const current)$/
+cTagKind	c.c	/^static cKind cTagKind (const tagType type)$/
+canMatch	ruby.c	/^static boolean canMatch (const unsigned char** s, /
+canonicalizePath	routines.c	/^static void canonicalizePath (char *const path __u/
+catFile	sort.c	/^extern void catFile (const char *const name)$/
+charIsIn	ruby.c	/^static boolean charIsIn (char ch, const char* list/
+checkForLabel	fortran.c	/^static void checkForLabel (void)$/
+checkOptionOrder	options.c	/^static void checkOptionOrder (const char* const op/
+checkOptions	options.c	/^extern void checkOptions (void)$/
+checkParent	python.c	/^static void checkParent(NestingLevels *nls, int in/
+checkRegex	lregex.c	/^extern void checkRegex (void)$/
+checkSameFile	options.c	/^static boolean checkSameFile (const char *const fi/
+checkStatementEnd	c.c	/^static void checkStatementEnd (statementInfo *cons/
+chooseBranch	get.c	/^static void chooseBranch (void)$/
+classDecl	ocaml.c	/^static void classDecl (vString * const ident, ocaT/
+classSpecif	ocaml.c	/^static void classSpecif (vString * const UNUSED (i/
+clean	Makefile	/^clean:$/
+cleanupPreviousParser	ocaml.c	/^static void cleanupPreviousParser ( void )$/
+clearLanguageMap	parse.c	/^extern void clearLanguageMap (const langType langu/
+clearPatternSet	lregex.c	/^static void clearPatternSet (const langType langua/
+clearStack	ocaml.c	/^static void clearStack ( void )$/
+clock	main.c	/^static clock_t clock (void)$/
+closeTagFile	entry.c	/^extern void closeTagFile (const boolean resize)$/
+closedir	mac.c	/^int closedir(DIR *dirp)$/
+combinePathAndFile	routines.c	/^extern vString *combinePathAndFile ($/
+compareString	strlist.c	/^static boolean compareString ($/
+compareStringInsensitive	strlist.c	/^static boolean compareStringInsensitive ($/
+compareTags	sort.c	/^static int compareTags (const void *const one, con/
+compareTagsFolded	sort.c	/^static int compareTagsFolded(const void *const one/
+compileRegex	lregex.c	/^static regex_t* compileRegex (const char* const re/
+computeModuleName	ocaml.c	/^static void computeModuleName ( void )$/
+concat	routines.c	/^static char* concat (const char *s1, const char *s/
+constructParentString	python.c	/^static boolean constructParentString(NestingLevels/
+constructorValidation	ocaml.c	/^static void constructorValidation (vString * const/
+contextDescription	ocaml.c	/^static const char *contextDescription (contextType/
+contextTypeSuffix	ocaml.c	/^static char contextTypeSuffix (contextType t)$/
+contextualTillToken	ocaml.c	/^static void contextualTillToken (vString * const U/
+copyBytes	entry.c	/^extern void copyBytes (FILE* const fromFp, FILE* c/
+copyFile	entry.c	/^extern void copyFile (const char *const from, cons/
+copyName	readtags.c	/^static void copyName (tagFile *const file)$/
+copyToken	c.c	/^static void copyToken (tokenInfo *const dest, cons/
+cppBeginStatement	get.c	/^extern void cppBeginStatement (void)$/
+cppEndStatement	get.c	/^extern void cppEndStatement (void)$/
+cppGetc	get.c	/^extern int cppGetc (void)$/
+cppInit	get.c	/^extern void cppInit (const boolean state, const bo/
+cppTerminate	get.c	/^extern void cppTerminate (void)$/
+cppUngetc	get.c	/^extern void cppUngetc (const int c)$/
+createPascalTag	pascal.c	/^static void createPascalTag ($/
+createTags	c.c	/^static void createTags (const unsigned int nestLev/
+createTagsForAmigaWildcard	main.c	/^static boolean createTagsForAmigaWildcard (const c/
+createTagsForArgs	main.c	/^static boolean createTagsForArgs (cookedArgs *cons/
+createTagsForEntry	main.c	/^static boolean createTagsForEntry (const char *con/
+createTagsForFile	parse.c	/^static boolean createTagsForFile ($/
+createTagsForWildcardArg	main.c	/^static boolean createTagsForWildcardArg (const cha/
+createTagsForWildcardEntry	main.c	/^static boolean createTagsForWildcardEntry ($/
+createTagsForWildcardUsingFindfirst	main.c	/^static boolean createTagsForWildcardUsingFindfirst/
+createTagsFromFileInput	main.c	/^static boolean createTagsFromFileInput (FILE *cons/
+createTagsFromListFile	main.c	/^static boolean createTagsFromListFile (const char /
+createTagsWithFallback	parse.c	/^static boolean createTagsWithFallback ($/
+csharpTagKind	c.c	/^static csharpKind csharpTagKind (const tagType typ/
+currentConditional	get.c	/^static conditionalInfo *currentConditional (void)$/
+currentdrive	routines.c	/^#  define currentdrive() (_getdrive() + 'A' - 1)$/
+custom_expand	qdos.c	/^int custom_expand (char * param, char ***argvptr, /
+dctags$(EXEEXT)	Makefile	/^dctags$(EXEEXT): debug.c $(SOURCES) $(HEADERS)$/
+debug	debug.h	/^# define debug(level)      ((Option.debugLevel & (/
+debugCppIgnore	debug.c	/^extern void debugCppIgnore (const boolean ignore)$/
+debugCppNest	debug.c	/^extern void debugCppNest (const boolean begin, con/
+debugEntry	debug.c	/^extern void debugEntry (const tagEntryInfo *const /
+debugParseNest	debug.c	/^extern void debugParseNest (const boolean increase/
+debugPrintf	debug.c	/^extern void debugPrintf ($/
+debugPutc	debug.c	/^extern void debugPutc (const int level, const int /
+declString	c.c	/^static const char *declString (const declType decl/
+declToTagType	c.c	/^static tagType declToTagType (const declType decla/
+definition	ctags.html	/^function definition could possibly even cause the /
+deleteAllStatements	c.c	/^static void deleteAllStatements (void)$/
+deleteStatement	c.c	/^static void deleteStatement (void)$/
+deleteToken	c.c	/^static void deleteToken (tokenInfo *const token)$/
+determineInterpreter	parse.c	/^static vString* determineInterpreter (const char* /
+directiveDefine	get.c	/^static void directiveDefine (const int c)$/
+directiveHash	get.c	/^static boolean directiveHash (const int c)$/
+directiveIf	get.c	/^static boolean directiveIf (const int c)$/
+directivePragma	get.c	/^static void directivePragma (int c)$/
+disableLanguageKinds	parse.c	/^static void disableLanguageKinds (const langType l/
+disableRegexKinds	lregex.c	/^extern void disableRegexKinds (const langType lang/
+discardTypeList	c.c	/^static void discardTypeList (tokenInfo *const toke/
+distclean	Makefile	/^distclean: clean$/
+doesFileExist	routines.c	/^extern boolean doesFileExist (const char *const fi/
+duplicate	readtags.c	/^static char *duplicate (const char *str)$/
+eCalloc	routines.c	/^extern void *eCalloc (const size_t count, const si/
+eFree	routines.c	/^extern void eFree (void *const ptr)$/
+eMalloc	routines.c	/^extern void *eMalloc (const size_t size)$/
+eRealloc	routines.c	/^extern void *eRealloc (void *const ptr, const size/
+eStat	routines.c	/^extern fileStatus *eStat (const char *const fileNa/
+eStatFree	routines.c	/^extern void eStatFree (fileStatus *status)$/
+eStrdup	routines.c	/^extern char* eStrdup (const char* str)$/
+eatComment	ocaml.c	/^static void eatComment (lexingState * st)$/
+eatNumber	ocaml.c	/^static ocamlKeyword eatNumber (lexingState * st)$/
+eatOperator	ocaml.c	/^static ocamlKeyword eatOperator (lexingState * st)/
+eatString	ocaml.c	/^static void eatString (lexingState * st)$/
+eatWhiteSpace	ocaml.c	/^static void eatWhiteSpace (lexingState * st)$/
+emitRubyTag	ruby.c	/^static void emitRubyTag (vString* name, rubyKind k/
+employer	COPYING	/^You should also get your employer (if you work as /
+enableLanguage	parse.c	/^extern void enableLanguage (const langType languag/
+enableLanguageKind	parse.c	/^static boolean enableLanguageKind ($/
+enableLanguages	parse.c	/^extern void enableLanguages (const boolean state)$/
+enableRegexKind	lregex.c	/^extern boolean enableRegexKind ($/
+endEtagsFile	entry.c	/^extern void endEtagsFile (const char *const name)$/
+endtoken	pascal.c	/^#define endtoken(c)   (! intoken (c)  &&  ! isdigi/
+enterUnnamedScope	ruby.c	/^static void enterUnnamedScope (void)$/
+error	routines.c	/^extern void error ($/
+etagsInclude	main.c	/^static boolean etagsInclude (void)$/
+etyperef$(EXEEXT)	Makefile	/^etyperef$(EXEEXT): $(ETYPEREF_OBJS)$/
+etyperef.o	Makefile	/^etyperef.o: eiffel.c$/
+exceptionDecl	ocaml.c	/^static void exceptionDecl (vString * const ident, /
+exit_handler	argproc.c	/^static exit_handler (status)$/
+expand_wild_cards	argproc.c	/^static expand_wild_cards (item, head, tail, count)/
+externalSortTags	sort.c	/^extern void externalSortTags (const boolean toStdo/
+extract_name	basic.c	/^static char const *extract_name (char const *pos, /
+failedSort	sort.c	/^static void failedSort (FILE *const fp, const char/
+fgetpos	routines.c	/^extern int fgetpos (FILE *stream, fpos_t *pos)$/
+field	entry.c	/^#define field(x)		(fields + ((size_t) (x) * fieldL/
+fileClose	read.c	/^extern void fileClose (void)$/
+fileEOF	read.c	/^extern boolean fileEOF (void)$/
+fileExtension	routines.c	/^extern const char *fileExtension (const char *cons/
+fileGetc	eiffel.c	/^static int fileGetc (void)$/
+fileNameMatched	strlist.c	/^static boolean fileNameMatched ($/
+fileNewline	read.c	/^static void fileNewline (void)$/
+fileOpen	read.c	/^extern boolean fileOpen (const char *const fileNam/
+fileReadLine	read.c	/^extern const unsigned char *fileReadLine (void)$/
+fileSkipToCharacter	read.c	/^extern int fileSkipToCharacter (int c)$/
+fileUngetc	eiffel.c	/^static int fileUngetc (c)$/
+filesRequired	options.c	/^extern boolean filesRequired (void)$/
+find	readtags.c	/^static tagResult find (tagFile *const file, tagEnt/
+findAsmTags	asm.c	/^static void findAsmTags (void)$/
+findAspTags	asp.c	/^static void findAspTags (void)$/
+findAwkTags	awk.c	/^static void findAwkTags (void)$/
+findBasicTags	basic.c	/^static void findBasicTags (void)$/
+findBetaTags	beta.c	/^static void findBetaTags (void)$/
+findBinary	readtags.c	/^static tagResult findBinary (tagFile *const file)$/
+findCTags	c.c	/^static boolean findCTags (const unsigned int passC/
+findCmdTerm	flex.c	/^static void findCmdTerm (tokenInfo *const token)$/
+findDefinitionOrClass	python.c	/^static const char *findDefinitionOrClass (const ch/
+findEiffelTags	eiffel.c	/^static void findEiffelTags (void)$/
+findErlangTags	erlang.c	/^static void findErlangTags (void)$/
+findFeatureEnd	eiffel.c	/^static void findFeatureEnd (tokenInfo *const token/
+findFirstMatchBefore	readtags.c	/^static tagResult findFirstMatchBefore (tagFile *co/
+findFirstNonMatchBefore	readtags.c	/^static void findFirstNonMatchBefore (tagFile *cons/
+findFlexTags	flex.c	/^static void findFlexTags (void)$/
+findFortranTags	fortran.c	/^static boolean findFortranTags (const unsigned int/
+findJsTags	jscript.c	/^static void findJsTags (void)$/
+findKeyword	eiffel.c	/^static void findKeyword (tokenInfo *const token, c/
+findLispTags	lisp.c	/^static void findLispTags (void)$/
+findLuaTags	lua.c	/^static void findLuaTags (void)$/
+findMakeTags	make.c	/^static void findMakeTags (void)$/
+findNext	readtags.c	/^static tagResult findNext (tagFile *const file, ta/
+findNextIdentifier	sml.c	/^static smlKind findNextIdentifier (const unsigned /
+findOcamlTags	ocaml.c	/^static void findOcamlTags (void)$/
+findPascalTags	pascal.c	/^static void findPascalTags (void)$/
+findPerlTags	perl.c	/^static void findPerlTags (void)$/
+findPhpTags	php.c	/^static void findPhpTags (void)$/
+findPythonTags	python.c	/^static void findPythonTags (void)$/
+findReferences	eiffel.c	/^static void findReferences (void)$/
+findRegexTags	lregex.c	/^extern void findRegexTags (void)$/
+findRubyTags	ruby.c	/^static void findRubyTags (void)$/
+findSchemeTags	scheme.c	/^static void findSchemeTags (void)$/
+findScopeHierarchy	c.c	/^static void findScopeHierarchy (vString *const str/
+findSequential	readtags.c	/^static tagResult findSequential (tagFile *const fi/
+findShTags	sh.c	/^static void findShTags (void)$/
+findSmlTags	sml.c	/^static void findSmlTags (void)$/
+findSqlTags	sql.c	/^static void findSqlTags (void)$/
+findTag	readtags.c	/^static void findTag (const char *const name, const/
+findTclTags	tcl.c	/^static void findTclTags (void)$/
+findTexTags	tex.c	/^static void findTexTags (void)$/
+findToken	eiffel.c	/^static void findToken (tokenInfo *const token, con/
+findVariable	python.c	/^static const char *findVariable(const char *line)$/
+findVerilogTags	verilog.c	/^static void findVerilogTags (void)$/
+findVhdlTags	vhdl.c	/^static void findVhdlTags (void)$/
+findVimTags	vim.c	/^static void findVimTags (void)$/
+find_triple_end	python.c	/^static void find_triple_end(char const *string, ch/
+find_triple_start	python.c	/^static char const *find_triple_start(char const *s/
+freeKeywordTable	keyword.c	/^extern void freeKeywordTable (void)$/
+freeList	options.c	/^extern void freeList (stringList** const pList)$/
+freeOptionResources	options.c	/^extern void freeOptionResources (void)$/
+freeParserResources	parse.c	/^extern void freeParserResources (void)$/
+freeRegexResources	lregex.c	/^extern void freeRegexResources (void)$/
+freeRoutineResources	routines.c	/^extern void freeRoutineResources (void)$/
+freeSourceFileResources	read.c	/^extern void freeSourceFileResources (void)$/
+freeString	options.c	/^static void freeString (char **const pString)$/
+freeTagFileResources	entry.c	/^extern void freeTagFileResources (void)$/
+fsetpos	routines.c	/^extern int fsetpos (FILE *stream, fpos_t const *po/
+getBooleanOption	options.c	/^static boolean getBooleanOption ($/
+getChar	fortran.c	/^static int getChar (void)$/
+getDirectiveNestLevel	get.c	/^extern unsigned int getDirectiveNestLevel (void)$/
+getExecutableName	routines.c	/^extern const char *getExecutableName (void)$/
+getExecutablePath	routines.c	/^extern const char *getExecutablePath (void)$/
+getExtensionLanguage	parse.c	/^static langType getExtensionLanguage (const char */
+getFileLanguage	parse.c	/^extern langType getFileLanguage (const char *const/
+getFixedFormChar	fortran.c	/^static int getFixedFormChar (void)$/
+getFreeFormChar	fortran.c	/^static int getFreeFormChar (void)$/
+getHashTable	keyword.c	/^static hashEntry **getHashTable (void)$/
+getHashTableEntry	keyword.c	/^static hashEntry *getHashTableEntry (unsigned long/
+getInputFileName	read.h	/^#define getInputFileName()       vStringValue (Fil/
+getInputFilePosition	read.h	/^#define getInputFilePosition()   File.filePosition/
+getInputLineNumber	read.h	/^#define getInputLineNumber()     File.lineNumber$/
+getInterpreterLanguage	parse.c	/^static langType getInterpreterLanguage (const char/
+getLanguageName	parse.c	/^extern const char *getLanguageName (const langType/
+getLastNamedIndex	ocaml.c	/^static int getLastNamedIndex ( void )$/
+getLineType	fortran.c	/^static lineType getLineType (void)$/
+getNamedLanguage	parse.c	/^extern langType getNamedLanguage (const char *cons/
+getPatternLanguage	parse.c	/^static langType getPatternLanguage (const char *co/
+getSourceFileName	read.h	/^#define getSourceFileName()      vStringValue (Fil/
+getSourceFileTagPath	read.h	/^#define getSourceFileTagPath()   File.source.tagPa/
+getSourceLanguage	read.h	/^#define getSourceLanguage()      File.source.langu/
+getSourceLanguageName	read.h	/^#define getSourceLanguageName()  getLanguageName (/
+getSourceLineNumber	read.h	/^#define getSourceLineNumber()    File.source.lineN/
+get_path	mac.c	/^static int get_path(const char* in_unix_path, unsi/
+getcwd	mac.c	/^char* getcwd(char* out_path, int out_path_len)$/
+getredirection	argproc.c	/^getredirection (ac, av)$/
+globalLet	ocaml.c	/^static void globalLet (vString * const ident, ocaT/
+globalScope	ocaml.c	/^static void globalScope (vString * const UNUSED (i/
+gotoFirstLogicalTag	readtags.c	/^static void gotoFirstLogicalTag (tagFile *const fi/
+growFields	readtags.c	/^static tagResult growFields (tagFile *const file)$/
+growString	readtags.c	/^static int growString (vstring *s)$/
+hackReject	sh.c	/^static boolean hackReject (const vString* const ta/
+handleDirective	get.c	/^static boolean handleDirective (const int c)$/
+hashValue	keyword.c	/^static unsigned long hashValue (const char *const /
+iFileGetLine	read.c	/^static vString *iFileGetLine (void)$/
+iFileGetc	read.c	/^static int iFileGetc (void)$/
+ignoreToken	ocaml.c	/^static void ignoreToken (vString * const UNUSED (i/
+implementationString	c.c	/^static const char *implementationString (const imp/
+includeExtensionFlags	entry.c	/^#define includeExtensionFlags()         (Option.ta/
+includeTag	c.c	/^static boolean includeTag (const tagType type, con/
+includingDefineTags	c.c	/^extern boolean includingDefineTags (void)$/
+index	ctags.spec	/^Exuberant Ctags generates an index (or tag) file o/
+inheritingDeclaration	c.c	/^static boolean inheritingDeclaration (declType dec/
+initKeywordHash	ocaml.c	/^static void initKeywordHash ( void )$/
+initMemberInfo	c.c	/^static void initMemberInfo (statementInfo *const s/
+initOperatorTable	ocaml.c	/^static void initOperatorTable ( void )$/
+initOptions	options.c	/^extern void initOptions (void)$/
+initParenInfo	c.c	/^static void initParenInfo (parenInfo *const info)$/
+initStack	ocaml.c	/^static void initStack ( void )$/
+initStatement	c.c	/^static void initStatement (statementInfo *const st/
+initTagEntry	entry.c	/^extern void initTagEntry (tagEntryInfo *const e, c/
+initToken	c.c	/^static void initToken (tokenInfo* const token)$/
+initialize	asm.c	/^static void initialize (const langType language)$/
+initializeCParser	c.c	/^static void initializeCParser (const langType lang/
+initializeCppParser	c.c	/^static void initializeCppParser (const langType la/
+initializeCsharpParser	c.c	/^static void initializeCsharpParser (const langType/
+initializeJavaParser	c.c	/^static void initializeJavaParser (const langType l/
+initializeParsers	parse.c	/^static void initializeParsers (void)$/
+initializeParsing	parse.c	/^extern void initializeParsing (void)$/
+initializeVeraParser	c.c	/^static void initializeVeraParser (const langType l/
+insideEnumBody	c.c	/^#define insideEnumBody(st)  ((st)->parent == NULL /
+insideInterface	fortran.c	/^static boolean insideInterface (void)$/
+install	Makefile	/^install: install-ctags$/
+install-bin	Makefile	/^install-bin: install-cbin install-ebin install-lib/
+install-cbin	Makefile	/^install-cbin: $(DEST_CTAGS)$/
+install-cman	Makefile	/^install-cman: $(DEST_CMAN)$/
+install-ctags	Makefile	/^install-ctags: install-cbin install-cman$/
+install-ebin	Makefile	/^install-ebin: $(DEST_ETAGS)$/
+install-eman	Makefile	/^install-eman: $(DEST_EMAN)$/
+install-etags	Makefile	/^install-etags: install-ebin install-eman$/
+install-lib	Makefile	/^install-lib: $(DEST_READ_LIB) $(DEST_READ_INC)$/
+install-man	Makefile	/^install-man: install-cman install-eman$/
+install-strip	Makefile	/^install-strip: install$/
+installAntRegex	ant.c	/^static void installAntRegex (const langType langua/
+installCobolRegex	cobol.c	/^static void installCobolRegex (const langType lang/
+installDosBatchRegex	dosbatch.c	/^static void installDosBatchRegex (const langType l/
+installHeaderListDefaults	options.c	/^static void installHeaderListDefaults (void)$/
+installHtmlRegex	html.c	/^static void installHtmlRegex (const langType langu/
+installLanguageMapDefault	parse.c	/^extern void installLanguageMapDefault (const langT/
+installLanguageMapDefaults	parse.c	/^extern void installLanguageMapDefaults (void)$/
+installMatLabRegex	matlab.c	/^static void installMatLabRegex (const langType lan/
+installPHPRegex	php.c	/^static void installPHPRegex (const langType langua/
+installRexxRegex	rexx.c	/^static void installRexxRegex (const langType langu/
+installSlangRegex	slang.c	/^static void installSlangRegex (const langType lang/
+installYaccRegex	yacc.c	/^static void installYaccRegex (const langType langu/
+internalSortTags	sort.c	/^extern void internalSortTags (const boolean toStdo/
+intoken	pascal.c	/^#define intoken(c)    (isalnum ((int) c) || (int) /
+is	ctags.html	/^function is defined outside of the class declarati/
+isAbsolutePath	routines.c	/^extern boolean isAbsolutePath (const char *const p/
+isAlpha	ocaml.c	/^static boolean isAlpha (char c)$/
+isAmigaDirectory	routines.c	/^static boolean isAmigaDirectory (const char *const/
+isBlank	fortran.c	/^#define isBlank(c)              (boolean) (c == ' /
+isBraceFormat	get.c	/^extern boolean isBraceFormat (void)$/
+isCmdTerm	sql.c	/^static boolean isCmdTerm (tokenInfo *const token)$/
+isComment	get.c	/^static Comment isComment (void)$/
+isCompoundOption	options.c	/^#define isCompoundOption(c)  (boolean) (strchr ("f/
+isContextualKeyword	c.c	/^static boolean isContextualKeyword (const tokenInf/
+isContextualStatement	c.c	/^static boolean isContextualStatement (const statem/
+isCtagsLine	entry.c	/^static boolean isCtagsLine (const char *const line/
+isDefineOperator	asm.c	/^static boolean isDefineOperator (const vString *co/
+isDestinationStdout	main.c	/^extern boolean isDestinationStdout (void)$/
+isEtagsLine	entry.c	/^static boolean isEtagsLine (const char *const line/
+isExcludedFile	options.c	/^extern boolean isExcludedFile (const char* const n/
+isExternCDecl	c.c	/^#define isExternCDecl(st,c) (boolean) ((c) == STRI/
+isFalse	options.c	/^static boolean isFalse (const char *parameter)$/
+isFileScope	fortran.c	/^static boolean isFileScope (const tagType type)$/
+isFreeOperatorChar	eiffel.c	/^#define isFreeOperatorChar(c) ((c) == '@' || (c) =/
+isGeneric	eiffel.c	/^static boolean isGeneric (tokenInfo *const token)$/
+isHeaderFile	read.h	/^#define isHeaderFile()           File.source.isHea/
+isHighChar	c.c	/^#define isHighChar(c)       ((c) != EOF && (unsign/
+isIdent	ocaml.c	/^static boolean isIdent (char c)$/
+isIdentChar	flex.c	/^static boolean isIdentChar (const int c)$/
+isIdentChar1	sql.c	/^static boolean isIdentChar1 (const int c)$/
+isIdentifier	make.c	/^static boolean isIdentifier (int c)$/
+isIdentifier1	perl.c	/^static boolean isIdentifier1 (int c)$/
+isIdentifierCharacter	erlang.c	/^static boolean isIdentifierCharacter (int c)$/
+isIdentifierFirstCharacter	erlang.c	/^static boolean isIdentifierFirstCharacter (int c)$/
+isIdentifierMatch	eiffel.c	/^static boolean isIdentifierMatch ($/
+isIgnore	get.c	/^static boolean isIgnore (void)$/
+isIgnoreBranch	get.c	/^static boolean isIgnoreBranch (void)$/
+isIgnoreToken	options.c	/^extern boolean isIgnoreToken ($/
+isIgnoredDeclaration	fortran.c	/^static boolean isIgnoredDeclaration (tokenInfo *co/
+isIncludeFile	options.c	/^extern boolean isIncludeFile (const char *const fi/
+isInitialSymbolCharacter	asm.c	/^static boolean isInitialSymbolCharacter (int c)$/
+isKeyword	eiffel.c	/^#define isKeyword(token,k)    (boolean) ((token)->/
+isKeywordOrIdent	vhdl.c	/^static boolean isKeywordOrIdent (const tokenInfo */
+isLanguage	read.h	/^#define isLanguage(lang)         (boolean)((lang) /
+isLetter	php.c	/^static boolean isLetter(const int c)$/
+isLowerAlpha	ocaml.c	/^static boolean isLowerAlpha (char c)$/
+isMap	vim.c	/^static boolean isMap (const unsigned char* line)$/
+isMatchedEnd	sql.c	/^static boolean isMatchedEnd(tokenInfo *const token/
+isMember	c.c	/^static boolean isMember (const statementInfo *cons/
+isNum	ocaml.c	/^static boolean isNum (char c)$/
+isOneOf	c.c	/^#define isOneOf(c,s)        (boolean) (strchr ((s)/
+isPathSeparator	routines.c	/^static boolean isPathSeparator (const int c)$/
+isPodWord	perl.c	/^static boolean isPodWord (const char *word)$/
+isRecursiveLink	routines.c	/^extern boolean isRecursiveLink (const char* const /
+isSameFile	routines.c	/^extern boolean isSameFile (const char *const name1/
+isSecondaryKeyword	fortran.c	/^#define isSecondaryKeyword(token,k)  (boolean) ((t/
+isSpace	ocaml.c	/^static boolean isSpace (char c)$/
+isStatementEnd	c.c	/^static boolean isStatementEnd (const statementInfo/
+isSubprogramPrefix	fortran.c	/^static boolean isSubprogramPrefix (tokenInfo *cons/
+isSubroutineDeclaration	perl.c	/^static boolean isSubroutineDeclaration (const unsi/
+isSymbolCharacter	asm.c	/^static boolean isSymbolCharacter (int c)$/
+isTagFile	entry.c	/^static boolean isTagFile (const char *const filena/
+isTrue	options.c	/^static boolean isTrue (const char *parameter)$/
+isType	c.c	/^#define isType(token,t)     (boolean) ((token)->ty/
+isTypeSpec	fortran.c	/^static boolean isTypeSpec (tokenInfo *const token)/
+isUpperAlpha	ocaml.c	/^static boolean isUpperAlpha (char c)$/
+isValidTagAddress	entry.c	/^static boolean isValidTagAddress (const char *cons/
+isValidTypeSpecifier	c.c	/^static boolean isValidTypeSpecifier (const declTyp/
+isVarChar	php.c	/^static boolean isVarChar(const int c)$/
+isVarChar1	php.c	/^static boolean isVarChar1(const int c)$/
+is_a_code_line	lua.c	/^static boolean is_a_code_line (const unsigned char/
+isbident	beta.c	/^#define isbident(c) (identarray [(unsigned char) (/
+isident	eiffel.c	/^#define isident(c)            (isalnum(c) || (c) =/
+isident1	get.h	/^#define isident1(c)  (isalpha(c) || (c) == '_' || /
+isspacetab	get.c	/^#define isspacetab(c)			((c) == SPACE || (c) == TA/
+javaTagKind	c.c	/^static javaKind javaTagKind (const tagType type)$/
+keywordString	c.c	/^static const char *keywordString (const keywordId /
+killCurrentState	ocaml.c	/^static void killCurrentState ( void )$/
+langKindOption	parse.c	/^static kindOption *langKindOption (const langType /
+languageSupportsGenerics	c.c	/^static boolean languageSupportsGenerics (void)$/
+letParam	ocaml.c	/^static void letParam (vString * const ident, ocaTo/
+lex	ocaml.c	/^static ocamlKeyword lex (lexingState * st)$/
+lineBreak	debug.c	/^extern void lineBreak (void) {}  \/* provides a lin/
+listTags	readtags.c	/^static void listTags (void)$/
+localLet	ocaml.c	/^static void localLet (vString * const ident, ocaTo/
+localScope	ocaml.c	/^static void localScope (vString * const ident, oca/
+lookupKeyword	keyword.c	/^extern int lookupKeyword (const char *const string/
+lstat	e_mac.h	/^#define lstat(a,b)  mstat(a,b)$/
+maintainerclean	Makefile	/^maintainerclean: distclean$/
+makeAsmTag	asm.c	/^static void makeAsmTag ($/
+makeBetaTag	beta.c	/^static void makeBetaTag (const char* const name, c/
+makeClassTag	flex.c	/^static void makeClassTag (tokenInfo *const token)$/
+makeConstTag	flex.c	/^static void makeConstTag (tokenInfo *const token, /
+makeDefineTag	get.c	/^static void makeDefineTag (const char *const name)/
+makeEiffelClassTag	eiffel.c	/^static void makeEiffelClassTag (tokenInfo *const t/
+makeEiffelFeatureTag	eiffel.c	/^static void makeEiffelFeatureTag (tokenInfo *const/
+makeEiffelLocalTag	eiffel.c	/^static void makeEiffelLocalTag (tokenInfo *const t/
+makeExtraTagEntry	c.c	/^static void makeExtraTagEntry (const tagType type,/
+makeFileTag	parse.c	/^static void makeFileTag (const char *const fileNam/
+makeFlexTag	flex.c	/^static void makeFlexTag (tokenInfo *const token, f/
+makeFortranTag	fortran.c	/^static void makeFortranTag (tokenInfo *const token/
+makeFunctionTag	flex.c	/^static void makeFunctionTag (tokenInfo *const toke/
+makeJsTag	jscript.c	/^static void makeJsTag (tokenInfo *const token, con/
+makeLabelTag	fortran.c	/^static void makeLabelTag (vString *const label)$/
+makeMXTag	flex.c	/^static void makeMXTag (tokenInfo *const token)$/
+makeMemberTag	erlang.c	/^static void makeMemberTag ($/
+makePascalTag	pascal.c	/^static void makePascalTag (const tagEntryInfo* con/
+makeRegexTag	lregex.c	/^static void makeRegexTag ($/
+makeSimpleTag	parse.c	/^extern void makeSimpleTag ($/
+makeSmlTag	sml.c	/^static void makeSmlTag (smlKind type, vString *nam/
+makeSqlTag	sql.c	/^static void makeSqlTag (tokenInfo *const token, co/
+makeTag	c.c	/^static void makeTag (const tokenInfo *const token,/
+makeTagEntry	entry.c	/^extern void makeTagEntry (const tagEntryInfo *cons/
+makeTags	main.c	/^static void makeTags (cookedArgs *args)$/
+makeTclTag	tcl.c	/^static const unsigned char *makeTclTag ($/
+makeTexTag	tex.c	/^static void makeTexTag (tokenInfo *const token, te/
+makeVariableTag	python.c	/^static void makeVariableTag (vString *const var, v/
+makeVhdlTag	vhdl.c	/^static void makeVhdlTag (tokenInfo * const token, /
+match	tcl.c	/^static boolean match (const unsigned char *line, c/
+matchCallbackPattern	lregex.c	/^static void matchCallbackPattern ($/
+matchPattern	ocaml.c	/^static void matchPattern (vString * const UNUSED (/
+matchRegex	lregex.c	/^extern boolean matchRegex (const vString* const li/
+matchRegexPattern	lregex.c	/^static boolean matchRegexPattern (const vString* c/
+matchTagPattern	lregex.c	/^static void matchTagPattern (const vString* const /
+match_colon_label	basic.c	/^static void match_colon_label (char const *p)$/
+match_dot_label	basic.c	/^static void match_dot_label (char const *p)$/
+match_keyword	basic.c	/^static int match_keyword (const char *p, KeyWord c/
+mayRedeclare	ocaml.c	/^static void mayRedeclare (vString * const ident, o/
+methodDecl	ocaml.c	/^static void methodDecl (vString * const ident, oca/
+mfopen	mac.c	/^FILE* mfopen(const char* file, const char* mode)$/
+moduleDecl	ocaml.c	/^static void moduleDecl (vString * const ident, oca/
+moduleSpecif	ocaml.c	/^static void moduleSpecif (vString * const ident, o/
+mostlyclean	Makefile	/^mostlyclean: clean$/
+mstat	mac.c	/^int mstat(const char* file, struct stat* st)$/
+nameComparison	readtags.c	/^static int nameComparison (tagFile *const file)$/
+nest	c.c	/^static void nest (statementInfo *const st, const u/
+nestingLevelsFree	python.c	/^static void nestingLevelsFree (NestingLevels *nls)/
+nestingLevelsGetCurrent	python.c	/^static NestingLevel *nestingLevelsGetCurrent (Nest/
+nestingLevelsNew	python.c	/^static NestingLevels *nestingLevelsNew (void)$/
+nestingLevelsPop	python.c	/^static void nestingLevelsPop (NestingLevels *nls)$/
+nestingLevelsPush	python.c	/^static void nestingLevelsPush (NestingLevels *nls,/
+newEntry	keyword.c	/^static hashEntry *newEntry ($/
+newLowerString	routines.c	/^extern char* newLowerString (const char* str)$/
+newStatement	c.c	/^static statementInfo *newStatement (statementInfo /
+newToken	c.c	/^static tokenInfo *newToken (void)$/
+newTokenFrom	fortran.c	/^static tokenInfo *newTokenFrom (tokenInfo *const t/
+newUpperString	routines.c	/^extern char* newUpperString (const char* str)$/
+nextChar	make.c	/^static int nextChar (void)$/
+nextFileArg	args.c	/^static char* nextFileArg (FILE* const fp)$/
+nextFileLine	args.c	/^static char* nextFileLine (FILE* const fp)$/
+nextFileString	args.c	/^static char* nextFileString (const Arguments* cons/
+nextString	args.c	/^static char* nextString (const Arguments* const cu/
+nextStringArg	args.c	/^static char *nextStringArg (const char** const nex/
+nextStringLine	args.c	/^static char* nextStringLine (const char** const ne/
+nextToken	c.c	/^static void nextToken (statementInfo *const st)$/
+ocamlInitialize	ocaml.c	/^static void ocamlInitialize (const langType langua/
+openTagFile	entry.c	/^extern void openTagFile (void)$/
+opendir	mac.c	/^DIR *opendir(const char *dirname)$/
+operatorKind	asm.c	/^static AsmKind operatorKind ($/
+parameter	ctags.1	/^function parameter declaration). In fact, this see/
+parentDecl	c.c	/^#define parentDecl(st)      ((st)->parent == NULL /
+parseActionScript	flex.c	/^static boolean parseActionScript (tokenInfo *const/
+parseArglist	python.c	/^static char *parseArglist(const char *buf)$/
+parseArguments	eiffel.c	/^static void parseArguments (tokenInfo *const token/
+parseAutogroup	vim.c	/^static void parseAutogroup (const unsigned char *l/
+parseBlock	flex.c	/^static boolean parseBlock (tokenInfo *const token,/
+parseBlockData	fortran.c	/^static void parseBlockData (tokenInfo *const token/
+parseCDATA	flex.c	/^static boolean parseCDATA (tokenInfo *const token)/
+parseCharacter	eiffel.c	/^static int parseCharacter (void)$/
+parseClass	eiffel.c	/^static void parseClass (tokenInfo *const token)$/
+parseCommand	vim.c	/^static boolean parseCommand (const unsigned char */
+parseComment	sql.c	/^static void parseComment (tokenInfo *const token)$/
+parseCommonNamelistStmt	fortran.c	/^static void parseCommonNamelistStmt (tokenInfo *co/
+parseComponentDefStmt	fortran.c	/^static void parseComponentDefStmt (tokenInfo *cons/
+parseConfigurationFileOptions	options.c	/^static void parseConfigurationFileOptions (void)$/
+parseConfigurationFileOptionsInDirectory	options.c	/^static void parseConfigurationFileOptionsInDirecto/
+parseConfigurationFileOptionsInDirectoryWithLeafname	options.c	/^static void parseConfigurationFileOptionsInDirecto/
+parseConstant	vhdl.c	/^static void parseConstant (boolean local)$/
+parseConvert	eiffel.c	/^static void parseConvert (tokenInfo *const token)$/
+parseDeclarationConstruct	fortran.c	/^static boolean parseDeclarationConstruct (tokenInf/
+parseDeclare	sql.c	/^static void parseDeclare (tokenInfo *const token, /
+parseDeclareANSI	sql.c	/^static void parseDeclareANSI (tokenInfo *const tok/
+parseDerivedTypeDef	fortran.c	/^static void parseDerivedTypeDef (tokenInfo *const /
+parseDirective	erlang.c	/^static void parseDirective (const unsigned char *c/
+parseDomain	sql.c	/^static void parseDomain (tokenInfo *const token)$/
+parseDrop	sql.c	/^static void parseDrop (tokenInfo *const token)$/
+parseEntityDecl	fortran.c	/^static void parseEntityDecl (tokenInfo *const toke/
+parseEntityDeclList	fortran.c	/^static void parseEntityDeclList (tokenInfo *const /
+parseEntityType	eiffel.c	/^static void parseEntityType (tokenInfo *const toke/
+parseEntryStmt	fortran.c	/^static void parseEntryStmt (tokenInfo *const token/
+parseEnvironmentOptions	options.c	/^static void parseEnvironmentOptions (void)$/
+parseEscapedCharacter	eiffel.c	/^static int parseEscapedCharacter (void)$/
+parseEvent	sql.c	/^static void parseEvent (tokenInfo *const token)$/
+parseExecutionPart	fortran.c	/^static boolean parseExecutionPart (tokenInfo *cons/
+parseExport	eiffel.c	/^static void parseExport (tokenInfo *const token)$/
+parseExtensionFields	readtags.c	/^static void parseExtensionFields (tagFile *const f/
+parseFeature	eiffel.c	/^static boolean parseFeature (tokenInfo *const toke/
+parseFeatureClauses	eiffel.c	/^static void parseFeatureClauses (tokenInfo *const /
+parseFieldDefinition	fortran.c	/^static void parseFieldDefinition (tokenInfo *const/
+parseFile	parse.c	/^extern boolean parseFile (const char *const fileNa/
+parseFileOptions	options.c	/^static boolean parseFileOptions (const char* const/
+parseFlexFile	flex.c	/^static void parseFlexFile (tokenInfo *const token)/
+parseFreeOperator	eiffel.c	/^static void parseFreeOperator (vString *const stri/
+parseFunction	flex.c	/^static void parseFunction (tokenInfo *const token)/
+parseFunctionSubprogram	fortran.c	/^static void parseFunctionSubprogram (tokenInfo *co/
+parseFunctionTag	erlang.c	/^static void parseFunctionTag (const unsigned char /
+parseGeneralToken	c.c	/^static void parseGeneralToken (statementInfo *cons/
+parseGeneric	eiffel.c	/^static void parseGeneric (tokenInfo *const token, /
+parseIdentifier	c.c	/^static void parseIdentifier (statementInfo *const /
+parseIf	flex.c	/^static boolean parseIf (tokenInfo *const token)$/
+parseImplicitPartStmt	fortran.c	/^static boolean parseImplicitPartStmt (tokenInfo *c/
+parseImports	python.c	/^static void parseImports (const char *cp)$/
+parseIndex	sql.c	/^static void parseIndex (tokenInfo *const token)$/
+parseInherit	eiffel.c	/^static void parseInherit (tokenInfo *const token)$/
+parseInteger	eiffel.c	/^static vString *parseInteger (int c)$/
+parseInterfaceBlock	fortran.c	/^static void parseInterfaceBlock (tokenInfo *const /
+parseInternalSubprogramPart	fortran.c	/^static void parseInternalSubprogramPart (tokenInfo/
+parseJavaAnnotation	c.c	/^static void parseJavaAnnotation (statementInfo *co/
+parseJsFile	jscript.c	/^static void parseJsFile (tokenInfo *const token)$/
+parseKeywords	sql.c	/^static void parseKeywords (tokenInfo *const token)/
+parseKinds	lregex.c	/^static void parseKinds ($/
+parseLabel	ocaml.c	/^static void parseLabel (vString * const ident, oca/
+parseLet	vim.c	/^static void parseLet (const unsigned char *line)$/
+parseLine	flex.c	/^static boolean parseLine (tokenInfo *const token)$/
+parseLineDirective	read.c	/^static boolean parseLineDirective (void)$/
+parseLocal	eiffel.c	/^static void parseLocal (tokenInfo *const token)$/
+parseLongOption	options.c	/^static void parseLongOption (cookedArgs *const arg/
+parseLoop	flex.c	/^static void parseLoop (tokenInfo *const token)$/
+parseMLConn	sql.c	/^static void parseMLConn (tokenInfo *const token)$/
+parseMLTable	sql.c	/^static void parseMLTable (tokenInfo *const token)$/
+parseMXML	flex.c	/^static boolean parseMXML (tokenInfo *const token)$/
+parseMainProgram	fortran.c	/^static void parseMainProgram (tokenInfo *const tok/
+parseMap	fortran.c	/^static void parseMap (tokenInfo *const token)$/
+parseMethods	flex.c	/^static void parseMethods (tokenInfo *const token, /
+parseModule	fortran.c	/^static void parseModule (tokenInfo *const token)$/
+parseModuleTag	erlang.c	/^static void parseModuleTag (const unsigned char *c/
+parseNumeric	eiffel.c	/^static vString *parseNumeric (int c)$/
+parseOption	options.c	/^extern void parseOption (cookedArgs* const args)$/
+parseOptionnal	ocaml.c	/^static void parseOptionnal (vString * const ident,/
+parseOptions	options.c	/^extern void parseOptions (cookedArgs* const args)$/
+parsePackage	vhdl.c	/^static void parsePackage (tokenInfo * const token)/
+parseParens	c.c	/^static int parseParens (statementInfo *const st, p/
+parseProgramUnit	fortran.c	/^static void parseProgramUnit (tokenInfo *const tok/
+parsePublication	sql.c	/^static void parsePublication (tokenInfo *const tok/
+parseQualifierSpecList	fortran.c	/^static void parseQualifierSpecList (tokenInfo *con/
+parseRecord	sql.c	/^static void parseRecord (tokenInfo *const token)$/
+parseRename	eiffel.c	/^static void parseRename (tokenInfo *const token)$/
+parseRubyOperator	ruby.c	/^static boolean parseRubyOperator (vString* name, c/
+parseService	sql.c	/^static void parseService (tokenInfo *const token)$/
+parseShortOption	options.c	/^static void parseShortOption (cookedArgs *const ar/
+parseSimple	sql.c	/^static void parseSimple (tokenInfo *const token, c/
+parseSimpleTag	erlang.c	/^static void parseSimpleTag (const unsigned char *c/
+parseSpecificationPart	fortran.c	/^static boolean parseSpecificationPart (tokenInfo */
+parseSpecificationStmt	fortran.c	/^static boolean parseSpecificationStmt (tokenInfo */
+parseSqlFile	sql.c	/^static void parseSqlFile (tokenInfo *const token)$/
+parseStatement	flex.c	/^static boolean parseStatement (tokenInfo *const to/
+parseStatements	sql.c	/^static void parseStatements (tokenInfo *const toke/
+parseStmtFunctionStmt	fortran.c	/^static boolean parseStmtFunctionStmt (tokenInfo *c/
+parseString	eiffel.c	/^static void parseString (vString *const string)$/
+parseStructureStmt	fortran.c	/^static void parseStructureStmt (tokenInfo *const t/
+parseSubProgram	sql.c	/^static void parseSubProgram (tokenInfo *const toke/
+parseSubprogram	fortran.c	/^static void parseSubprogram (tokenInfo *const toke/
+parseSubroutineSubprogram	fortran.c	/^static void parseSubroutineSubprogram (tokenInfo */
+parseSwitch	flex.c	/^static void parseSwitch (tokenInfo *const token)$/
+parseSynonym	sql.c	/^static void parseSynonym (tokenInfo *const token)$/
+parseTable	sql.c	/^static void parseTable (tokenInfo *const token)$/
+parseTag	tex.c	/^static boolean parseTag (tokenInfo *const token, t/
+parseTagLine	readtags.c	/^static void parseTagLine (tagFile *file, tagEntry /
+parseTagRegex	lregex.c	/^static boolean parseTagRegex ($/
+parseTexFile	tex.c	/^static void parseTexFile (tokenInfo *const token)$/
+parseTrigger	sql.c	/^static void parseTrigger (tokenInfo *const token)$/
+parseType	eiffel.c	/^static boolean parseType (tokenInfo *const token)$/
+parseTypeDeclarationStmt	fortran.c	/^static void parseTypeDeclarationStmt (tokenInfo *c/
+parseTypeSpec	fortran.c	/^static void parseTypeSpec (tokenInfo *const token)/
+parseTypes	vhdl.c	/^static void parseTypes (tokenInfo * const token)$/
+parseUnionStmt	fortran.c	/^static void parseUnionStmt (tokenInfo *const token/
+parseVar	flex.c	/^static boolean parseVar (tokenInfo *const token, b/
+parseVariable	sql.c	/^static void parseVariable (tokenInfo *const token)/
+parseVhdlFile	vhdl.c	/^static void parseVhdlFile (tokenInfo * const token/
+parseView	sql.c	/^static void parseView (tokenInfo *const token)$/
+parseVimFile	vim.c	/^static void parseVimFile (const unsigned char *lin/
+parseVimLine	vim.c	/^static boolean parseVimLine (const unsigned char */
+parserNew	parse.c	/^extern parserDefinition* parserNew (const char* na/
+pipe_and_fork	argproc.c	/^static char *pipe_and_fork (cmd)$/
+platform	INSTALL.oth	/^If you are attempting to install Exuberant Ctags o/
+plural	main.c	/^#define plural(value)  (((unsigned long)(value) ==/
+popConditional	get.c	/^static boolean popConditional (void)$/
+popLastNamed	ocaml.c	/^static void popLastNamed ( void )$/
+popSoftContext	ocaml.c	/^static void popSoftContext ( void )$/
+popStrongContext	ocaml.c	/^static contextType popStrongContext ( void )$/
+prepareTag	ocaml.c	/^static void prepareTag (tagEntryInfo * tag, vStrin/
+prevToken	c.c	/^static tokenInfo *prevToken (const statementInfo */
+previewFirstOption	options.c	/^extern void previewFirstOption (cookedArgs* const /
+printBucket	keyword.c	/^static unsigned int printBucket (const unsigned in/
+printEntry	keyword.c	/^static void printEntry (const hashEntry *const ent/
+printFeatureList	options.c	/^static void printFeatureList (void)$/
+printInvocationDescription	options.c	/^static void printInvocationDescription (void)$/
+printKeywordTable	keyword.c	/^extern void printKeywordTable (void)$/
+printKinds	parse.c	/^static void printKinds (langType language, boolean/
+printLanguage	parse.c	/^static void printLanguage (const langType language/
+printLanguageKind	parse.c	/^static void printLanguageKind (const kindOption* c/
+printLanguageKinds	parse.c	/^extern void printLanguageKinds (const langType lan/
+printLanguageList	parse.c	/^extern void printLanguageList (void)$/
+printLanguageMap	parse.c	/^extern void printLanguageMap (const langType langu/
+printLanguageMaps	parse.c	/^extern void printLanguageMaps (const langType lang/
+printMaps	parse.c	/^static void printMaps (const langType language)$/
+printOptionDescriptions	options.c	/^static void printOptionDescriptions (const optionD/
+printProgramIdentification	options.c	/^static void printProgramIdentification (void)$/
+printRegexKind	lregex.c	/^static void printRegexKind (const regexPattern *pa/
+printRegexKinds	lregex.c	/^extern void printRegexKinds (const langType langua/
+printTag	readtags.c	/^static void printTag (const tagEntry *entry)$/
+printTotals	main.c	/^static void printTotals (const clock_t *const time/
+print_string	lua.c	/^static void __unused__ print_string (char *p, char/
+processAngleBracket	c.c	/^static void processAngleBracket (void)$/
+processBooleanOption	options.c	/^static boolean processBooleanOption ($/
+processColon	c.c	/^static void processColon (statementInfo *const st)/
+processEtagsInclude	options.c	/^static void processEtagsInclude ($/
+processExcludeOption	options.c	/^static void processExcludeOption ($/
+processExcmdOption	options.c	/^static void processExcmdOption ($/
+processExtraTagsOption	options.c	/^static void processExtraTagsOption ($/
+processFieldsOption	options.c	/^static void processFieldsOption ($/
+processFilterTerminatorOption	options.c	/^static void processFilterTerminatorOption ($/
+processFormatOption	options.c	/^static void processFormatOption ($/
+processHeaderListOption	options.c	/^static void processHeaderListOption (const int opt/
+processHelpOption	options.c	/^static void processHelpOption ($/
+processIgnoreOption	options.c	/^static void processIgnoreOption (const char *const/
+processInitializer	c.c	/^static void processInitializer (statementInfo *con/
+processInterface	c.c	/^static void processInterface (statementInfo *const/
+processKindOption	parse.c	/^extern boolean processKindOption ($/
+processLangKindOption	parse.c	/^static void processLangKindOption ($/
+processLanguageDefineOption	parse.c	/^extern void processLanguageDefineOption ($/
+processLanguageForceOption	options.c	/^static void processLanguageForceOption ($/
+processLanguageMap	options.c	/^static char* processLanguageMap (char* map)$/
+processLanguageMapOption	options.c	/^static void processLanguageMapOption ($/
+processLanguageRegex	lregex.c	/^static void processLanguageRegex (const langType l/
+processLanguagesOption	options.c	/^static void processLanguagesOption ($/
+processLicenseOption	options.c	/^static void processLicenseOption ($/
+processListKindsOption	options.c	/^static void processListKindsOption ($/
+processListLanguagesOption	options.c	/^static void processListLanguagesOption ($/
+processListMapsOption	options.c	/^static void processListMapsOption ($/
+processLongOption	options.c	/^static void processLongOption ($/
+processName	c.c	/^static void processName (statementInfo *const st)$/
+processOptionFile	options.c	/^static void processOptionFile ($/
+processParametricOption	options.c	/^static boolean processParametricOption ($/
+processRegexOption	lregex.c	/^extern boolean processRegexOption (const char *con/
+processShortOption	options.c	/^static void processShortOption ($/
+processSortOption	options.c	/^static void processSortOption ($/
+processToken	c.c	/^static void processToken (tokenInfo *const token, /
+processVersionOption	options.c	/^static void processVersionOption ($/
+prototypes	configure	/^   function prototypes and stuff, but not '\\xHH' h/
+ps	c.c	/^static void __unused__ ps (statementInfo *const st/
+pt	c.c	/^static void __unused__ pt (tokenInfo *const token)/
+pushConditional	get.c	/^static boolean pushConditional (const boolean firs/
+pushContext	ocaml.c	/^static void pushContext (contextKind kind, context/
+pushEmptyContext	ocaml.c	/^static void pushEmptyContext (parseNext continuati/
+pushSoftContext	ocaml.c	/^static void pushSoftContext (parseNext continuatio/
+pushStrongContext	ocaml.c	/^static void pushStrongContext (vString * name, con/
+qualifyBlockTag	c.c	/^static void qualifyBlockTag (statementInfo *const /
+qualifyCompoundTag	c.c	/^static void qualifyCompoundTag (const statementInf/
+qualifyEnumeratorTag	c.c	/^static void qualifyEnumeratorTag (const statementI/
+qualifyFunctionDeclTag	c.c	/^static void qualifyFunctionDeclTag (const statemen/
+qualifyFunctionTag	c.c	/^static void qualifyFunctionTag (const statementInf/
+qualifyVariableTag	c.c	/^static void qualifyVariableTag (const statementInf/
+readAndEmitTag	ruby.c	/^static void readAndEmitTag (const unsigned char** /
+readDirective	get.c	/^static boolean readDirective (int c, char *const n/
+readFeatureName	eiffel.c	/^static boolean readFeatureName (tokenInfo *const t/
+readFieldValue	readtags.c	/^static const char *readFieldValue ($/
+readFileName	read.c	/^static vString *readFileName (void)$/
+readIdentifier	c.c	/^static void readIdentifier (tokenInfo *const token/
+readIgnoreList	options.c	/^static void readIgnoreList (const char *const list/
+readLine	eiffel.c	/^extern char *readLine (vString *const vLine, FILE /
+readLineNumber	read.c	/^static unsigned long readLineNumber (void)$/
+readNext	readtags.c	/^static tagResult readNext (tagFile *const file, ta/
+readOperator	asm.c	/^static const unsigned char *readOperator ($/
+readOptionConfiguration	options.c	/^extern void readOptionConfiguration (void)$/
+readPackageName	c.c	/^static void readPackageName (tokenInfo *const toke/
+readPackageOrNamespace	c.c	/^static void readPackageOrNamespace (statementInfo /
+readParents	c.c	/^static void readParents (statementInfo *const st, /
+readPreProc	asm.c	/^static boolean readPreProc (const unsigned char *c/
+readPseudoTags	readtags.c	/^static void readPseudoTags (tagFile *const file, t/
+readSourceLine	read.c	/^extern char *readSourceLine ($/
+readSubToken	fortran.c	/^static void readSubToken (tokenInfo *const token)$/
+readSymbol	asm.c	/^static const unsigned char *readSymbol ($/
+readTagLine	readtags.c	/^static int readTagLine (tagFile *const file)$/
+readTagLineRaw	readtags.c	/^static int readTagLineRaw (tagFile *const file)$/
+readTagLineSeek	readtags.c	/^static int readTagLineSeek (tagFile *const file, c/
+readToken	eiffel.c	/^static void readToken (tokenInfo *const token)$/
+readVimLine	vim.c	/^static const unsigned char * readVimLine (void)$/
+readdir	mac.c	/^struct dirent *readdir(DIR *dirp)$/
+readtags$(EXEEXT)	Makefile	/^readtags$(EXEEXT): readtags.c readtags.h$/
+recurseIntoDirectory	main.c	/^static boolean recurseIntoDirectory (const char *c/
+recurseUsingOpendir	main.c	/^static boolean recurseUsingOpendir (const char *co/
+reinitStatement	c.c	/^static void reinitStatement (statementInfo *const /
+relativeFilename	routines.c	/^extern char* relativeFilename (const char *file, c/
+rememberMaxLengths	entry.c	/^static void rememberMaxLengths (const size_t nameL/
+removeLanguageExtensionMap	parse.c	/^extern boolean removeLanguageExtensionMap (const c/
+replacementTruncate	entry.c	/^static int replacementTruncate (const char *const /
+reportType	eiffel.c	/^static void reportType (tokenInfo *const token)$/
+requestStrongPoping	ocaml.c	/^static void requestStrongPoping ( void )$/
+resizeTagFile	entry.c	/^static void resizeTagFile (const long newSize)$/
+restartStatement	c.c	/^static void restartStatement (statementInfo *const/
+retardToken	c.c	/^static void retardToken (statementInfo *const st)$/
+rewinddir	mac.c	/^void rewinddir(DIR *dirp)$/
+saveIgnoreToken	options.c	/^static void saveIgnoreToken (vString *const ignore/
+scanSeparators	lregex.c	/^static char* scanSeparators (char* name)$/
+scopeString	c.c	/^static const char *scopeString (const tagScope sco/
+selected	routines.c	/^#define selected(var,feature)	(((int)(var) & (int)/
+setAccess	c.c	/^static void setAccess (statementInfo *const st, co/
+setCurrentDirectory	routines.c	/^extern void setCurrentDirectory (void)$/
+setDefaultTagFileName	options.c	/^extern void setDefaultTagFileName (void)$/
+setEtagsMode	options.c	/^static void setEtagsMode (void)$/
+setExecutableName	routines.c	/^extern void setExecutableName (const char *const p/
+setIgnore	get.c	/^static boolean setIgnore (const boolean ignore)$/
+setInputFileName	read.c	/^static void setInputFileName (const char *const fi/
+setSourceFileName	read.c	/^static boolean setSourceFileName (vString *const f/
+setSourceFileParameters	read.c	/^static void setSourceFileParameters (vString *cons/
+setToken	c.c	/^static void setToken (statementInfo *const st, con/
+sig_child	argproc.c	/^static sig_child (chan)$/
+skipArgumentList	flex.c	/^static void skipArgumentList (tokenInfo *const tok/
+skipArrayList	flex.c	/^static void skipArrayList (tokenInfo *const token)/
+skipBraces	c.c	/^static void skipBraces (void)$/
+skipEverything	python.c	/^static const char *skipEverything (const char *cp)/
+skipIdentifier	python.c	/^static const char *skipIdentifier (const char *cp)/
+skipInitializer	c.c	/^static int skipInitializer (statementInfo *const s/
+skipJavaThrows	c.c	/^static void skipJavaThrows (statementInfo *const s/
+skipLine	fortran.c	/^static int skipLine (void)$/
+skipMacro	c.c	/^static void skipMacro (statementInfo *const st)$/
+skipMemIntializerList	c.c	/^static void skipMemIntializerList (tokenInfo *cons/
+skipOverCComment	get.c	/^int skipOverCComment (void)$/
+skipOverCplusComment	get.c	/^static int skipOverCplusComment (void)$/
+skipOverParens	fortran.c	/^static void skipOverParens (tokenInfo *const token/
+skipParens	c.c	/^static void skipParens (void)$/
+skipPast	fortran.c	/^static void skipPast (tokenInfo *const token, toke/
+skipPastMap	options.c	/^static char* skipPastMap (char* p)$/
+skipPastMatch	verilog.c	/^static int skipPastMatch (const char *const pair)$/
+skipPostArgumentStuff	c.c	/^static boolean skipPostArgumentStuff ($/
+skipPrefix	vim.c	/^static const unsigned char* skipPrefix (const unsi/
+skipSpace	erlang.c	/^static const unsigned char *skipSpace (const unsig/
+skipStatement	c.c	/^static void skipStatement (statementInfo *const st/
+skipStatementIfKeyword	fortran.c	/^static boolean skipStatementIfKeyword (tokenInfo */
+skipString	python.c	/^static const char *skipString (const char *cp)$/
+skipToCharacter	eiffel.c	/^static int skipToCharacter (const int c)$/
+skipToEndOfChar	get.c	/^static int skipToEndOfChar (void)$/
+skipToEndOfString	get.c	/^static int skipToEndOfString (boolean ignoreBacksl/
+skipToFormattedBraceMatch	c.c	/^static void skipToFormattedBraceMatch (void)$/
+skipToKeyword	vhdl.c	/^static void skipToKeyword (const keywordId keyword/
+skipToMatch	c.c	/^static void skipToMatch (const char *const pair)$/
+skipToMatched	sql.c	/^static void skipToMatched(tokenInfo *const token)$/
+skipToNextLine	fortran.c	/^static int skipToNextLine (void)$/
+skipToNextStatement	fortran.c	/^static void skipToNextStatement (tokenInfo *const /
+skipToNonWhite	c.c	/^static int skipToNonWhite (void)$/
+skipToOneOf	c.c	/^static int skipToOneOf (const char *const chars)$/
+skipToToken	fortran.c	/^static void skipToToken (tokenInfo *const token, t/
+skipTypeDecl	python.c	/^static const char *skipTypeDecl (const char *cp, b/
+skipWhite	read.c	/^static int skipWhite (void)$/
+skipWhitespace	ruby.c	/^static void skipWhitespace (const unsigned char** /
+sortTagFile	entry.c	/^static void sortTagFile (void)$/
+starttoken	pascal.c	/^#define starttoken(c) (isalpha ((int) c) || (int) /
+stat	e_mac.h	/^#define stat(a,b)   mstat(a,b)$/
+strcasecmp	general.h	/^#  define strcasecmp(s1,s2) stricmp(s1,s2)$/
+stringCopy	options.c	/^static char *stringCopy (const char *const string)/
+stringListAdd	strlist.c	/^extern void stringListAdd (stringList *const curre/
+stringListClear	strlist.c	/^extern void stringListClear (stringList *const cur/
+stringListCombine	strlist.c	/^extern void stringListCombine ($/
+stringListCount	strlist.c	/^extern unsigned int stringListCount (const stringL/
+stringListDelete	strlist.c	/^extern void stringListDelete (stringList *const cu/
+stringListExtensionMatched	strlist.c	/^extern boolean stringListExtensionMatched ($/
+stringListFileMatched	strlist.c	/^extern boolean stringListFileMatched ($/
+stringListHas	strlist.c	/^extern boolean stringListHas ($/
+stringListHasInsensitive	strlist.c	/^extern boolean stringListHasInsensitive ($/
+stringListHasTest	strlist.c	/^extern boolean stringListHasTest ($/
+stringListIndex	strlist.c	/^static int stringListIndex ($/
+stringListItem	strlist.c	/^extern vString* stringListItem ($/
+stringListLast	strlist.c	/^extern vString* stringListLast (const stringList */
+stringListNew	strlist.c	/^extern stringList *stringListNew (void)$/
+stringListNewFromArgv	strlist.c	/^extern stringList* stringListNewFromArgv (const ch/
+stringListNewFromFile	strlist.c	/^extern stringList* stringListNewFromFile (const ch/
+stringListPrint	strlist.c	/^extern void stringListPrint (const stringList *con/
+stringListRemoveExtension	strlist.c	/^extern boolean stringListRemoveExtension ($/
+stringListRemoveLast	strlist.c	/^extern void stringListRemoveLast (stringList *cons/
+stringListToScope	ruby.c	/^static vString* stringListToScope (const stringLis/
+stringMatch	get.c	/^#define stringMatch(s1,s2)		(strcmp (s1,s2) == 0)$/
+strncasecmp	general.h	/^#  define strncasecmp(s1,s2,n) strnicmp(s1,s2,n)$/
+strnuppercmp	readtags.c	/^static int strnuppercmp (const char *s1, const cha/
+strstr	routines.c	/^extern char* strstr (const char *str, const char */
+struppercmp	readtags.c	/^static int struppercmp (const char *s1, const char/
+substitute	lregex.c	/^static vString* substitute ($/
+t9ƒøu¨I‹	ctags	/^tƒ{ÿtƒøtæH‰ßèüÿÿ[H‰ï]A\\é°òÿÿH‰ÞH‰ïèåùÿÿH‰ßè÷/
+tagCheck	c.c	/^static void tagCheck (statementInfo *const st)$/
+tagFileName	entry.c	/^extern const char *tagFileName (void)$/
+tagLetter	c.c	/^static int tagLetter (const tagType type)$/
+tagName	c.c	/^static const char *tagName (const tagType type)$/
+tagNameList	verilog.c	/^static void tagNameList (const verilogKind kind, i/
+tags	Makefile	/^tags: $(CTAGS_EXEC)$/
+tagsClose	readtags.c	/^extern tagResult tagsClose (tagFile *const file)$/
+tagsField	readtags.c	/^extern const char *tagsField (const tagEntry *cons/
+tagsFind	readtags.c	/^extern tagResult tagsFind (tagFile *const file, ta/
+tagsFindNext	readtags.c	/^extern tagResult tagsFindNext (tagFile *const file/
+tagsFirst	readtags.c	/^extern tagResult tagsFirst (tagFile *const file, t/
+tagsNext	readtags.c	/^extern tagResult tagsNext (tagFile *const file, ta/
+tagsOpen	readtags.c	/^extern tagFile *tagsOpen (const char *const filePa/
+tagsSetSortType	readtags.c	/^extern tagResult tagsSetSortType (tagFile *const f/
+tail	pascal.c	/^static boolean tail (const char *cp)$/
+tempFile	routines.c	/^extern FILE *tempFile (const char *const mode, cha/
+tempnam	e_msoft.h	/^#define tempnam(dir,pfx) _tempnam(dir,pfx)$/
+terminate	readtags.c	/^static void terminate (tagFile *const file)$/
+testEtagsInvocation	options.c	/^extern void testEtagsInvocation (void)$/
+tillToken	ocaml.c	/^static void tillToken (vString * const UNUSED (ide/
+tillTokenOrFallback	ocaml.c	/^static void tillTokenOrFallback (vString * const i/
+tillTokenOrTerminatingOrFallback	ocaml.c	/^static void tillTokenOrTerminatingOrFallback (vStr/
+timeStamp	main.c	/^#define timeStamp(n) timeStamps[(n)]=(Option.print/
+toLowerString	routines.c	/^extern void toLowerString (char* str)$/
+toUpperString	routines.c	/^extern void toUpperString (char* str)$/
+tokenString	c.c	/^static const char *tokenString (const tokenType ty/
+truncateTagLine	entry.c	/^static void truncateTagLine ($/
+typeDecl	ocaml.c	/^static void typeDecl (vString * const ident, ocaTo/
+typeRecord	ocaml.c	/^static void typeRecord (vString * const ident, oca/
+typeSpecification	ocaml.c	/^static void typeSpecification (vString * const ide/
+ungetChar	fortran.c	/^static void ungetChar (const int c)$/
+uninstall	Makefile	/^uninstall: uninstall-bin uninstall-lib uninstall-m/
+uninstall-bin	Makefile	/^uninstall-bin:$/
+uninstall-ctags	Makefile	/^uninstall-ctags:$/
+uninstall-etags	Makefile	/^uninstall-etags:$/
+uninstall-lib	Makefile	/^uninstall-lib:$/
+uninstall-man	Makefile	/^uninstall-man:$/
+updatePseudoTags	entry.c	/^static long unsigned int updatePseudoTags (FILE *c/
+updateSortedFlag	entry.c	/^static void updateSortedFlag ($/
+used	EXTENDING.html	/^function used to invoke the parser on the currentl/
+vGetc	verilog.c	/^static int vGetc (void)$/
+vStringAutoResize	vstring.c	/^extern boolean vStringAutoResize (vString *const s/
+vStringCat	vstring.h	/^#define vStringCat(vs,s)      vStringCatS((vs), vS/
+vStringCatS	vstring.c	/^extern void vStringCatS (vString *const string, co/
+vStringChar	vstring.h	/^#define vStringChar(vs,i)     ((vs)->buffer[i])$/
+vStringChop	vstring.c	/^extern void vStringChop (vString *const string)$/
+vStringClear	vstring.c	/^extern void vStringClear (vString *const string)$/
+vStringCopy	vstring.h	/^#define vStringCopy(vs,s)     vStringCopyS((vs), v/
+vStringCopyS	vstring.c	/^extern void vStringCopyS (vString *const string, c/
+vStringCopyToLower	vstring.c	/^extern void vStringCopyToLower (vString *const des/
+vStringDelete	vstring.c	/^extern void vStringDelete (vString *const string)$/
+vStringItem	vstring.h	/^#define vStringItem(vs,i)     ((vs)->buffer[i])$/
+vStringLast	vstring.h	/^#define vStringLast(vs)       ((vs)->buffer[(vs)->/
+vStringLength	vstring.h	/^#define vStringLength(vs)     ((vs)->length)$/
+vStringLower	vstring.h	/^#define vStringLower(vs)      toLowerString((vs)->/
+vStringNCat	vstring.h	/^#define vStringNCat(vs,s,l)   vStringNCatS((vs), v/
+vStringNCatS	vstring.c	/^extern void vStringNCatS ($/
+vStringNCopy	vstring.h	/^#define vStringNCopy(vs,s,l)  vStringNCopyS((vs), /
+vStringNCopyS	vstring.c	/^extern void vStringNCopyS ($/
+vStringNew	vstring.c	/^extern vString *vStringNew (void)$/
+vStringNewCopy	vstring.c	/^extern vString *vStringNewCopy (const vString *con/
+vStringNewInit	vstring.c	/^extern vString *vStringNewInit (const char *const /
+vStringPut	vstring.c	/^extern void vStringPut (vString *const string, con/
+vStringResize	vstring.c	/^static void vStringResize (vString *const string, /
+vStringSetLength	vstring.c	/^extern void vStringSetLength (vString *const strin/
+vStringSize	vstring.h	/^#define vStringSize(vs)       ((vs)->size)$/
+vStringStripLeading	vstring.c	/^extern void vStringStripLeading (vString *const st/
+vStringStripNewline	vstring.c	/^extern void vStringStripNewline (vString *const st/
+vStringStripTrailing	vstring.c	/^extern void vStringStripTrailing (vString *const s/
+vStringTerminate	vstring.h	/^#define vStringTerminate(vs)  vStringPut(vs, '\\0')/
+vStringUpper	vstring.h	/^#define vStringUpper(vs)      toUpperString((vs)->/
+vStringValue	vstring.h	/^#define vStringValue(vs)      ((vs)->buffer)$/
+vUngetc	verilog.c	/^static void vUngetc (int c)$/
+variableTagType	fortran.c	/^static tagType variableTagType (void)$/
+veraTagKind	c.c	/^static veraKind veraTagKind (const tagType type) {/
+verbose	options.c	/^extern void verbose (const char *const format, .../
+writeCompactSourceLine	entry.c	/^static size_t writeCompactSourceLine (FILE *const /
+writeCtagsEntry	entry.c	/^static int writeCtagsEntry (const tagEntryInfo *co/
+writeEtagsEntry	entry.c	/^static int writeEtagsEntry (const tagEntryInfo *co/
+writeEtagsIncludes	entry.c	/^static void writeEtagsIncludes (FILE *const fp)$/
+writeLineNumberEntry	entry.c	/^static int writeLineNumberEntry (const tagEntryInf/
+writePatternEntry	entry.c	/^static int writePatternEntry (const tagEntryInfo */
+writePseudoTag	entry.c	/^static void writePseudoTag ($/
+writeSortedTags	sort.c	/^static void writeSortedTags ($/
+writeSourceLine	entry.c	/^static size_t writeSourceLine (FILE *const fp, con/
+writeXrefEntry	entry.c	/^static int writeXrefEntry (const tagEntryInfo *con/
+xCalloc	routines.h	/^#define xCalloc(n,Type)    (Type *)eCalloc((size_t/
+xMalloc	routines.h	/^#define xMalloc(n,Type)    (Type *)eMalloc((size_t/
+xRealloc	routines.h	/^#define xRealloc(p,n,Type) (Type *)eRealloc((p), (/

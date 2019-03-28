@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/luyi/yi_github/gnu_utils/courses/perl/oop/Cow/lib'
+let g:netrw_dirhist_2='/Users/luyi/yi_github/perl_libs/Linux-Inotify2-1.22'
+let g:netrw_dirhist_3='/Users/luyi/.HISTFILES'
+let g:netrw_dirhist_4='/Users/luyi'

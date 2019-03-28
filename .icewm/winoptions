@@ -1,0 +1,136 @@
+Gaim.icon: gaim
+
+lincvs.icon: lincvs
+
+bluefish.icon: bluefish
+
+qcad.icon: qcad
+
+sketch.icon: sketch
+
+start_avview.icon: alevt
+
+gkrellm.icon: gkrellm
+
+galeon_browser.icon: gnome
+
+Xcdroast.icon: xcdr
+
+MPlayer.MPlayer.icon: mplayer
+ViDEO.MPlayer.icon: mplayer
+mplayer.Mplayer.icon: mplayer
+SDL_App.SDL_App.icon: mplayer
+
+GQview.icon: gqview
+
+frame.frame.icon: audacity
+
+D4X_Main.D4X.icon: nt
+
+main.gFTP.icon: gftp
+
+lyX.icon: lyx
+
+gv.icon: gv
+
+IceMe.icon: clip
+
+xfig.icon: xfig
+
+Xine.icon: xine
+
+VCLSalFrame.icon: ooo_gulls
+swriter.icon: ooo_writer
+scalc.icon: ooo_calc
+sdraw.icon: ooo_draw
+simpress.icon: ooo_impress
+
+soffice.icon: so52
+
+gcalc.icon: calc
+
+kcalc.icon: kcalc
+
+AbiWord.icon: abiword
+
+gedit.icon: notes
+
+gmix.icon: multimedia
+
+xmms.icon: xmms
+
+cRadio.icon: cRadio
+gnomeradio.icon: radio
+GQradio.icon: radio
+
+licq.icon: icq
+
+xterm.icon: xterm
+rxvt.icon: xconsole
+nxterm.icon: xterm
+
+fte.icon: fte
+
+AcroRead.icon: pdf
+
+Netscape.icon: netscape
+Navigator.Netscape.icon: communicator-browser
+MailThread.Netscape.icon: communicator-mail
+MailFolder.Netscape.icon: communicator-mail
+Editor.Netscape.icon: communicator-composer
+AddressBook.Netscape.icon: communicator-abook
+AWTapp.icon: java
+
+xv.icon: xv
+
+xload.icon: xload
+
+mozilla-bin.icon: mozilla_icon
+mozillaComponentBar.icon: netscape 
+mozillaComponentBar.layer: OnTop
+mozillaComponentBar.ignoreTaskBar: 1
+mozillaComponentBar.allWorkspaces: 1
+mozillaComponentBar.dSysMenu: 0
+
+ee.icon: xeyes
+xeyes.ignoreTaskBar: 1
+xeyes.allWorkspaces: 1
+xeyes.dTitleBar: 0
+xeyes.dBorder: 0
+xeyes.dSysMenu: 0
+xeyes.dResize: 0
+xeyes.dClose: 0
+xeyes.dMinimize: 0
+xeyes.dMaximize: 0
+xeyes.ignoreNoFocusHint: 1
+
+toolbox.Gimp.icon: gimp
+toolbox.Gimp.fMaximize: 0
+toolbox.Gimp.dMaximize: 0
+toolbox.Gimp.fResize: 0
+toolbox.Gimp.dResize: 0
+Gimp.icon: gimp
+
+XClock.ignoreNoFocusHint: 1
+xclock.icon: xclock
+
+
+Vim.icon: gvim
+
+applix.ignoreNoFocusHint: 1
+
+XDdts.noFocusOnAppRaise: 1
+
+Wingz.noFocusOnAppRaise: 1
+WingzPro.noFocusOnAppRaise: 1
+
+backterm.layer: Desktop
+backterm.allWorkspaces: 1
+backterm.dBorder: 0
+backterm.dTitleBar: 0
+backterm.ignoreTaskBar: 1
+backterm.dMaximize: 0
+backterm.dMinimize: 0
+backterm.dRollup: 0
+backterm.dResize: 0
+backterm.dClose: 0

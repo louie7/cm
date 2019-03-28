@@ -1,0 +1,11 @@
+# This is an example for IceWM's toolbar definition file.
+#
+# Place your variants in /opt/csw/etc/icewm or in $HOME/.icewm
+# since modifications to this file will be discarded when you
+# (re)install icewm.
+#
+
+# prog rxvt xterm rxvt -bg black -cr green -fg white -C -vb -fn 9x15 -g 90x30 -sl 500
+
+# prog xterm xterm xterm -bg #CCE8CF -cr darkorange1 -fg black -C -fn 9x15 -sl 7777
+

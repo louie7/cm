@@ -1,0 +1,352 @@
+TL
+""""function MyDiff()
+""""  let opt = '-a --binary '
+""""  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+""""  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+""""  let arg1 = v:fname_in
+""""  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+""""  let arg2 = v:fname_new
+""""  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+""""  let arg3 = v:fname_out
+""""  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+""""  let eq = ''
+""""  if $VIMRUNTIME =~ ' '
+""""    if &sh =~ '\<cmd'
+""""      let cmd = '""' . $VIMRUNTIME . '\diff"'
+""""      let eq = '"'
+""""    else
+""""      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+""""    endif
+""""  else
+""""    let cmd = $VIMRUNTIME . '\diff'
+""""  endif
+""""  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+""""endfunction
+""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General Setting
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible 
+
+set history=700 
+
+" Enable file type detection.
+" filetype plugin on
+" filetype indent on 
+
+set autoread 
+
+" set mouse=a 
+
+"set mapleader used by '<leader>' in other map
+let mapleader = ","
+let g:mapleader = ","
+
+
+" Fast saving
+" nmap <leader>w :w!<cr>
+
+" Fast editing of the .vimrc
+map <leader>ev :e ~/.vimrc<cr>
+
+" Fast reloading of the .vimrc
+map <leader>sv :source ~/.vimrc<cr>
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim Interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Turn on Wild menu
+set wildmenu 
+
+"set cmdheight=2
+
+"Do not redraw, when running macros.. lazyredraw
+set lz 
+
+"Bbackspace and cursor keys wrap to
+set whichwrap+=<,>,h,l 
+
+"allow backspacing over everything in insert mode
+set backspace=eol,start,indent
+
+"Set magic on, for Regex
+set magic 
+
+"Highlight search things
+set hlsearch 
+
+"do incremental searching
+set incsearch    
+
+"set ignorecase    " ignore case when searching
+set ignorecase smartcase
+""" use \cpattern to search the word with case care
+
+set noerrorbells
+set vb t_vb=
+
+set ruler    "show the cursor position all the time
+set showcmd    "display incomplete commands
+
+
+" For all text files set 'textwidth' to 78 characters.
+" autocmd FileType text setlocal textwidth=78
+
+if has("vms")
+  set nobackup    " do not keep a backup file, use versions instead
+else
+  set backup    " keep a backup file
+endif
+
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  " Put these in an autocmd group, so that we can delete them easily.
+  augroup vimrcEx
+  au!
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+
+  augroup END
+
+endif " has("autocmd")
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Text, tab and indent related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" always uses spaces instead of tab characters
+set expandtab
+" make 'tab' insert indents instead of tabs at the beginning of a line
+set smarttab
+" size of an 'indent'
+set shiftwidth=4
+" size of a hard tabstop
+set tabstop=4
+
+set softtabstop=4
+
+" In insert mode, to erase previously entered characters
+set backspace=2
+
+" line break 
+set lbr
+
+" Maximum width of text that is being inserted
+" set tw=500
+
+"always set autoindenting on
+set ai 
+
+"Smart indent
+set si 
+
+"Wrap lines
+set wrap 
+
+
+map <leader>t2 :setlocal shiftwidth=2<cr>
+map <leader>t4 :setlocal shiftwidth=4<cr>
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Spell checking setting
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
+
+"Shortcuts using <leader>
+map <leader>sn ]s
+map <leader>sp [s
+map <leader>sa zg
+map <leader>s? z=
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set laststatus=2 
+
+"set statusline=%<%f%<%{FileTime()}%<%h%m%r%=%-20.(line=%03l,col=%02c%V,totlin=%L%)\%h%m%r%=%-30(,BfNm=%n%Y%)\%P\*%=%{CurTime()}
+"set rulerformat=%15(%c%V\ %p%%%)
+"set statusline=[T=%Y]\ %<%F%m%r%h\ \ %=%-7.(line=%l,col=%c%V,SumL=%L%)\%=%-7(,BfN=%n%) "\ %<%{CurTime()}
+"set statusline=%F%m%r%h%w\ [FMT=%{&ff}]\ [POS=%l,%v][%p%%]\ [STL=%Y]\ [%{strftime(\"%m/%d\ %H:%M\")}]
+set statusline=%F%m%r%h%w\ \ [F=%{&ff}]\ [S=%Y]\ [L=%l,%v][%p%%]
+"the current work time \ %{strftime(\"%m/%d/%y\ \%H:%M\")}
+
+"fu! FileTime()
+"        let ext=tolower(expand("%:e"))
+"        let fname=tolower(expand('%<'))
+"        let filename=fname . '.' . ext
+"        let msg=""
+"        let msg=msg." ".strftime("(MT %m/%d/%y %H:%M)",getftime(filename))
+"        return msg
+"endf
+
+fu! CurTime()
+        let ftime=""
+        let ftime=ftime." ".strftime("%b,%d %y %H:%M:%S")
+        return ftime
+endf
+
+"function! CurDir()
+"  let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+"  return curdir
+"endfunction
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" my individual setting here, so special for luyi--45 (:
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"set color for text
+colorscheme iDesert
+
+"set font 
+"set guifont=Courier_New:h11:cANSI
+
+"syntax hightlight
+syntax enable 
+
+"set line number
+set nu
+
+" show parenthesis mark match 
+set showmatch
+set matchtime=1
+
+" setting for 'Tlist' 
+let Tlist_Ctags_Cmd='~yilu/.vim/ctags-5.8/ctags'
+let Tlist_Show_One_File=1 
+let Tlist_Exit_OnlyWindow=1 
+let Tlist_Use_Right_Window=1
+
+"set foldcolumn=4
+
+
+" set the menu & the message to English
+set langmenu=en_US
+let $LANG = 'en_US'
+
+" source $VIMRUNTIME/delmenu.vim
+" source $VIMRUNTIME/menu.vim
+
+" winmanager set
+let g:winManagerWindowLayout='TagList|FileExplorer' 
+nmap wm :WMToggle<cr> 
+
+
+"Always set your working directory to the file you're editing
+function! CHANGE_CURR_DIR()
+  let _dir = expand("%:p:h")
+  exec "cd " . _dir
+  unlet _dir
+endfunction
+
+autocmd BufEnter * call CHANGE_CURR_DIR()
+
+"map a key to ':noh' to control-n that turn off 'hlsearch'
+"nmap <silent> <C-N> :silent noh<CR>
+
+
+"****************************************************************"
+"****************************************************************"
+"                  Lu Yi's Useful Toolkit                        "
+"****************************************************************"
+"****************************************************************"
+
+
+"****************************************************************"
+" 1. Reverse Selected Text-- visually select the word or words, and hit ';rv'
+vnoremap ;rv c<C-O>:set revins<cr><C-R>"<esc>:set norevins<cr>
+
+
+"****************************************************************"
+" 2. visual searching
+"use // to search the select string by visual
+" vnoremap // y/<C-R>"<CR>
+vnoremap // y/<C-R>=escape(@",'\\/.*^~[]')<CR><CR>
+
+
+"****************************************************************"
+" 3. Switching to a different file is made easier using a simple map:
+:map <F12> :buffers<CR>:e #
+
+
+"****************************************************************"
+" 4. hit F5 to compile and run the current file or F8 to compile or step through the code 
+map <F5> :call CompileRunGcc()<CR>
+
+map <F8> :call CompileGcc()<CR>
+
+func! CompileRunGcc()
+    "Save the file
+    exec "w"  
+    exec "!gcc % -o %< && cr 10 && IF EXIST %<.exe (%<) ELSE banner -c = Compile Unsuccessful "  
+    "jump back where we were
+    exec "i"
+endfunc
+
+func! CompileGcc()
+    exec "w"
+    exec "!gcc % -o %<  && IF EXIST %<.exe (cr 5 && banner -c # Success) ELSE banner -c # Compile Unsuccessful "
+    exec "i"
+endfunc
+
+
+"****************************************************************"
+" 5. add a function heading and position your cursor just after Description so that one can document as one proceeds with code.
+function FileHeading()
+  let s:line=line(".")
+  call setline(s:line,"/***************************************************")
+  call append(s:line,"* Description - ")
+  call append(s:line+1,"* Author -      Lu Yi")
+  call append(s:line+2,"* Date -        ".strftime("%b %d %Y"))
+  call append(s:line+3,"* *************************************************/")
+  unlet s:line
+endfunction
+
+imap <F7>  <esc>mz:execute FileHeading()<RET>`zjA
+
+
+"****************************************************************"
+" 6. make vim search tags file at the current dir.
+" if there is no such file, find it recursively from top.
+set tags=tags;
+" set autochdir
+
+
+"****************************************************************"
+" 7. show chinese char well
+" let &termencoding = &encoding
+" set encoding=utf-8
+" set fileencoding=utf-8
+" set fileencodings=ucs-bom,utf-8,gb18030,cp936
+" 
+
+"****************************************************************"
+" 8. show Whitespace characters (tabs, spaces, etc) at end of line 
+" highlight WhitespaceEOL ctermbg=yellow guibg=yellow
+" match WhitespaceEOL /\s\+$/
+
+"****************************************************************"
+" 9. show special characters (:h list) 
+" set lcs=tab:>-,eol:$,nbsp:%
+" set list 
+
+"set t_Co=256;
+

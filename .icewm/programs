@@ -1,0 +1,75 @@
+## This file is intended to be customized by the distributions.
+##
+## mostly obsolete, fixme
+menu Editors folder {
+    prog fte fte xfte
+    prog vim gvim gvim 
+    prog xemacs xemacs xemacs
+    prog emacs emacs emacs
+    prog NEdit nedit nedit
+    prog xedit xedit xedit
+    prog Lyx lyx lyx
+    prog Jove emacs xterm -e jove
+}
+menu "WWW" folder {
+    prog Netscape netscape netscape
+    prog Mozilla mozilla_icon mozilla
+    prog Lynx lynx xterm -e lynx
+    prog Links links xterm -e links
+}
+menu "Net" folder {
+    prog Pine email xterm -e pine
+    prog Mutt xfmail xterm -e mutt
+    prog NcFTP isp xterm -e ncftp
+    prog ircii irc xterm -e irc
+    prog gaim gaim gaim
+}
+menu "Document Viewers" folder {
+    prog "Acrobat Reader" acroread acroread
+    prog "DVI Previewer" xdvi xdvi
+    prog "Ghostview" gv gv
+    prog "Xpdf" xpdf xpdf
+}
+menu Graphics folder {
+    prog Gimp gimp gimp
+    prog XV xv xv
+    prog XPaint xpaint xpaint
+    prog XFig xfig xfig
+    prog flPhoto camera flphoto
+}
+menu Games folder {
+    prog "GNU Chess" app3 xterm -e gnuchess
+}
+#menu System folder {
+#    prog "Control Panel" redhat control-panel
+#}
+menu Utilities folder {
+    prog Xine xine gxine
+    prog XPlayCD xplaycd xplaycd
+    prog "X-CD-Roast" xcdroast xcdroast
+    prog XMixer xmixer xmixer
+    prog Clock xclock xclock
+    prog Magnify xmag xmag
+    prog Calculator xcalc xcalc
+    prog Colormap xcolormap xcmap
+    prog Clipboard xclipboard xclipboard
+    prog xkill bomb xkill
+    prog xload xload xload
+    prog xosview xosview xosview
+    prog "VNC Viewer" xosview vncviewer
+    separator
+    prog "Screen Saver" xlock xlock -nolock
+    prog "Screen Lock" xlock xlock
+}
+menu "Window Managers" folder {
+    restart icewm - icewm
+#    restart metacity - metacity
+    restart wmaker - wmaker
+#    restart fluxbox - fluxbox
+#    restart blackbox - blackbox
+#    restart enlightenment - enlightenment
+    restart fvwm2 - fvwm2
+#    restart fvwm - fvwm
+#    restart sawfish - sawfish
+#    restart sawfish2 - sawfish2
+}
