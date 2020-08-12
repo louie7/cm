@@ -4,7 +4,6 @@
 music bg
 Rain - Ultimate Rain Sounds Collection
     • TRD: https://github.com/google/styleguide https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/
-    • urls http://swe-web-prod3:8030/amIalive/rtracer
 
 ---
 
@@ -17,6 +16,7 @@ ps -eo pid,cmd,etime
 ## 1.3 OOM Kill
 
 ## 1.4 difference-between-eval-and-exec
+```bash
 Compare:
     1. $ bash -c 'echo $$ ; ls -l /proc/self ; echo foo'
     2. 7218
@@ -37,6 +37,30 @@ eval will run the arguments as a command in the current shell. In other words ev
     4. $ echo "$bar"
     5. foo
 It will not create a child process, so the variable is set in the current shell. (Of course eval /bin/ls will create a child process, the same way a plain old /bin/ls would.)
+```
+
+## 1.5 test disk IO stauts (speed) with dd
+```bash
+    dd if=/dev/zero of=test bs=1000M count=1
+    sync; dd if=/dev/zero of=tempfile bs=1048576 count=1024; sync;
+```
+
+## 1.6 timeout to a shell command call
+```bash
+    ## timeout would send signal to shell script and subshell at the same time
+    ## there is no way to trap the signal and send to subshell in the script
+    timeout -S TERM 5m <shell_script>.sh
+
+    ## up a subshell and send the signal to subshell at interval time like:
+    (
+        t = monitor_time
+        while [[ t > 0 ]]; do
+            [[ <cond> ]] && kill -s SIGINT $$
+            (( t-- ))
+        done
+    )
+
+```
 
 ---
 
@@ -197,8 +221,6 @@ ignore the ENV to execute shell command (ignore the ENV loaded from .bashrc etc 
 http://www.perlmonks.org/?node_id=716774 From bash manpage:
 --norc: Do not read and execute the system wide initialization file /etc/bash.bashrc and the personal initialization file ~/.bashrc if the shell is interactive. This option is on by default if the shell is invoked as sh. --noprofile: Do not read either the system-wide startup file /etc/profile or any of the personal initializa‐tion files ~/.bash_profile, ~/.bash_login, or ~/.profile. By default, bash reads these files when it is invoked as a login shell. If you want to keep using the system-wide rc file, but not the personal one, I imagine you can use the following and only name the system-wide one: --rcfile file: Execute commands from file instead of the system wide initialization file /etc/bash.bashrc and the standard personal initialization file ~/.bashrc if the shell is interactive.
 
-test disk IO stauts with dd
-    1. dd if=/dev/zero of=test bs=1000M count=1
 
 # 3. LESSONS #
 ## 3.1 to avoid NFS failure by refresh NFS cache with ‘rm -f’ before creating symlink 
@@ -219,6 +241,23 @@ perl -e '$a=qx|awk "/^INCLUDE/{print \\\$2}" file.txt |; print $a; '
 
 ```
 
+## 3.4 check if gold linker is used to build binary 
+```bash
+readelf --string-dump=.note.gnu.gold-version elf_binary 
+
+String dump of section '.note.gnu.gold-version':
+  [     c]  GNU
+  [    10]  gold 1.15
+```
+
+## 3.5 retry + rsync to avoid nfs randomly IO access issue
+```bash
+rsync with filelist to /tmp to avoid IO nfs issue
+```
+
+## 3.6 ANSI error message standard way
+```bash
+```
 
 others
 三围 97,87,96
