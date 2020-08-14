@@ -1,10 +1,12 @@
 # GNU #
+
+---
+
 # 1. make  #
 ## 1.1 make rule
 Rain - Ultimate Rain Sounds Collection
     • TRD: https://github.com/google/styleguide https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/
 
----
 
 ## 1.2 check process elapsed time
 etime In the POSIX locale, the elapsed time since the process was started, in the form: [[dd-]hh:]mm:ss
@@ -88,7 +90,6 @@ awk '{ if ( $1 in a ){ fh="/bin/stat -c %s " $2; fh | getline size; close(fh); p
 # getline sets $0 to the next input record from the current input file; 
 # getline <file sets $0 to the next record from file.  
 # getline x sets variable x instead.  
-# GNU #
 # 1. make  #
 ## 1.1 [writing rules](http://kirste.userpage.fu-berlin.de/chemnet/use/info/make/make_4.html)
 - Wildcard expansion happens automatically in targets, in dependencies, and in commands (where the shell does the expansion). In other contexts, wildcard expansion happens only if you request it explicitly with the wildcard function.
@@ -170,6 +171,9 @@ $+ <br>
 This is like '$^', but dependencies listed more than once are duplicated in the order they were listed in the makefile. This is primarily useful for use in linking commands where it is meaningful to repeat library file names in a particular order.
 $\* <br>
 The stem with which an implicit rule matches (see section How Patterns Match). If the target is 'dir/a.foo.b' and the target pattern is 'a.%.b' then the stem is 'dir/foo'. The stem is useful for constructing names of related files. In a static pattern rule, the stem is part of the file name that matched the `%' in the target pattern. In an explicit rule, there is no stem; so '$*' cannot be determined in that way. Instead, if the target name ends with a recognized suffix (see section Old-Fashioned Suffix Rules), '$*' is set to the target name minus the suffix. For example, if the target name is 'foo.c', then '$*' is set to 'foo', since '.c' is a suffix. GNU make does this bizarre thing only for compatibility with other implementations of make. You should generally avoid using '$*' except in implicit rules or static pattern rules. If the target name in an explicit rule does not end with a recognized suffix, '$*' is set to the empty string for that rule.
+
+
+
 
 
 

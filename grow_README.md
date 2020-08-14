@@ -1,8 +1,8 @@
 # grow #
+
+---
 # 1. BASICS  #
 ## 1.1 stage
-music bg
-Rain - Ultimate Rain Sounds Collection
     • TRD: https://github.com/google/styleguide https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/
 
 ---
@@ -27,6 +27,7 @@ with
     2. 7217
     3. lrwxrwxrwx 1 root root 0 Jun 30 16:49 /proc/self -> 7217
 echo $$ prints the PID of the shell I started, and listing /proc/self gives us the PID of the ls that was ran from the shell. Usually, the process IDs are different, but with exec the shell and ls have the same process ID. Also, the command following exec didn't run, since the shell was replaced.
+
     1. $ help eval
     2. eval: eval [arg ...]
     3.    Execute arguments as a shell command.
@@ -140,65 +141,17 @@ rsync -avz --exclude 'object_root' <src> <dest>
 ## --delete delete extraneous files from dest dirs
 /bin/usr/time -v rsync -av   --delete  empty_dir/ to_clean_dir/
 
-## 只同步/data2/rsinc.list文件中列出来的文件
+## *only* rsync files listed in /data2/rsinc.list
 /usr/bin/rsync -rvazu --ignore-errors  --timeout=200 --files-from=/data2/rsinc.list 10.0.0.103::bokee_html/ /data2/ottest
 ```
 
 
-3. python exp
-get clientroot with valid client naming
-    1. ref_client = ''.join([src.rsplit('_btracer',1)[0],'_us01']).rsplit('/',1)[1]
-    2. ref_client_root = subprocess.check_output(['/usr/local/bin/p4find_client', '-r', ref_client]).rstrip()    
-check python script syntax
-    1. python -m py_compile  <py_script>.py
-re
-re.escape to escape meta character use (?:aaa|bbb) to group re match
-SET operations
-s.update(t) s |= t return set s with elements added from t s.intersection_update(t) s &= t return set s keeping only elements also found in t s.difference_update(t) s -= t return set s after removing elements found in t s.symmetric_difference_update(t) s ^= t return set s with elements from s or t but not both s.add(x) add element x to set s s.remove(x) remove x from set s; raises KeyError if not present s.discard(x) removes x from set s if present s.pop() remove and return an arbitrary element from s; raises KeyError if empty s.clear() remove all elements from set s
-use SET to do one loop to find the pair whose summary is 6
-(use space to exchange time)
-    1. s1 = set([1, 3, 2, 5, 4])
-    2. s = frozenset([1, 3, 2, 5, 4])
-    3. r = []
-    4. for i in s:
-    5.    s1.discard(i)
-    6.    t = 6 - i
-    7.    if t in s1:
-    8.        r.append([i, t])
-    9.        s1.discard(t)
-sorted instance
 sorted(iterable, cmp=None, key=None, reverse=False) --> new sorted list
-    1. >>> l
-    2. ['Chr1-10.txt', 'Chr1-1.txt', 'Chr1-2.txt', 'Chr1-14.txt', 'Chr1-3.txt', 'Chr1-20.txt', 'Chr1-5.txt']
-    3. >>> sorted(l, key = lambda d: int(d.split('-')[-1].split('.')[0]))
-    4. ['Chr1-1.txt', 'Chr1-2.txt', 'Chr1-3.txt', 'Chr1-5.txt', 'Chr1-10.txt', 'Chr1-14.txt', 'Chr1-20.txt']
-    5. >>> l
-    6. ['Chr1-10.txt', 'Chr1-1.txt', 'Chr1-2.txt', 'Chr1-14.txt', 'Chr1-3.txt', 'Chr1-20.txt', 'Chr1-5.txt']
-list sort
-    1. >>> print (l.sort.__doc__)
-    2. L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
-    3. cmp(x, y) -> -1, 0, 1
-    4. >>> l = [('b',2),('a',1),('c',3)]
-    5. >>> l.sort(key=lambda x:x[1])
-    6. >>> l
-    7. [('a', 1), ('b', 2), ('c', 3)]
-dict sorted
-    1. >>> d = {'banana':3, 'apple':4, 'pear':1, 'orange':2}
-    2. >>> import collections
-    3. >>> collections.OrderedDict(sorted(d.items(),key = lambda t:t[0]))
-    4. OrderedDict([('apple', 4), ('banana', 3), ('orange', 2), ('pear', 1)])
-    5. >>> collections.OrderedDict(sorted(d.items(),key = lambda t:t[1]))
-    6. OrderedDict([('pear', 1), ('orange', 2), ('banana', 3), ('apple', 4)])
-fatest to check if key in hash
-efficient way to check if key exist
-    1. if key in MyDict:
-    2.  print 'exist'
 
 4. Snippet
 print column by trim its prefix space with awk
     1. awk -F':'  '{print gensub(/^[[:space:]]+/,"",1,$2);}'  /tmp/bb 
 
-get host with available slots
 
 find the pattern appear in consecutive ine
     1. awk '{/succeeded$/?f++:f=0; if(f==2){print NR};}'  ufile.txt
@@ -221,6 +174,7 @@ ignore the ENV to execute shell command (ignore the ENV loaded from .bashrc etc 
 http://www.perlmonks.org/?node_id=716774 From bash manpage:
 --norc: Do not read and execute the system wide initialization file /etc/bash.bashrc and the personal initialization file ~/.bashrc if the shell is interactive. This option is on by default if the shell is invoked as sh. --noprofile: Do not read either the system-wide startup file /etc/profile or any of the personal initializa‐tion files ~/.bash_profile, ~/.bash_login, or ~/.profile. By default, bash reads these files when it is invoked as a login shell. If you want to keep using the system-wide rc file, but not the personal one, I imagine you can use the following and only name the system-wide one: --rcfile file: Execute commands from file instead of the system wide initialization file /etc/bash.bashrc and the standard personal initialization file ~/.bashrc if the shell is interactive.
 
+---
 
 # 3. LESSONS #
 ## 3.1 to avoid NFS failure by refresh NFS cache with ‘rm -f’ before creating symlink 
@@ -259,6 +213,4 @@ rsync with filelist to /tmp to avoid IO nfs issue
 ```bash
 ```
 
-others
-三围 97,87,96
 

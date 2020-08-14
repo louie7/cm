@@ -3,11 +3,14 @@
 ## 1.1 
 Use `p4 reopen -c changelist file` to move an open file from its current pending changelist to pending changelist changelist.
 
+reopen the file from symlink to text
+p4 reopen  -t text link_file
+
 ## 1.2 [File Specifications](https://www.perforce.com/manuals/v18.1/cmdref/Content/CmdRef/filespecs.html)
 - wildcards
 | Expression     | Matches   | Comments   |
 | :---------     | :-------- | :---: |
-| J* | Files in the current directory starting with J |      |
+| J\* | Files in the current directory starting with J |      |
 | ./....c    | All files under the current directory and its subdirectories, that end in .c |     |
 |  %%1 - %%9     | Positional specifiers for substring rearrangement in filenames, when used in views.   |    |
 
