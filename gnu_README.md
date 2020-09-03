@@ -1,5 +1,7 @@
 # GNU #
 
+# TORD
+https://stackoverflow.com/questions/373142/what-techniques-can-be-used-to-speed-up-c-compilation-times
 ---
 
 # 1. make  #
