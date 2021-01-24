@@ -26,6 +26,47 @@ p4 reopen  -t text link_file
     1.4.2. Backing out an old changelist (edits only) 
     1.4.3. Backing out adds and deletes as well as edits 
 
+## 1.5 add back p4 deleted files
+```bash
+p4 sync -f deleted_file#<version>
+p4 add deleted_file
+```
+
+## 1.6 Reopen a changelist to add file:
+```bash
+p4 reopen -c 5930366 //depot/file/filename.c
+```
+
+## 1.7 change the specific filetype
+```bash
+# -F filter, List only those files that match the criteria specified by filter.
+# -T fields, List only those fields that match the field names specified by fields. 
+for depotPath in `p4 client -o client_name | awk '$1 ~ "//AA/BB/main/dev"{print $1}' | grep -v '^-' | sed  -e 's/^+//'`; \
+    do p4 fstat -F "headType ~= l & ^headType = symlink & ^headAction ~= delete" -T 'depotFile, headType' $depotPath; \
+done | grep -c depotFile
+    0
+```
+
+ 
+  
+## [file name limitations] (https://www.perforce.com/manuals/v17.1/cmdref/Content/CmdRef/filespecs.synopsis.limitations.html)
+```bash
+ p4 sync //depot/path/status%40june.txt
+ @  %40
+ #  %23
+ *  %2A
+ %  %25
+```
+
+## list specific status changes
+```bash
+# From <https://community.perforce.com/s/article/3462> 
+p4 changes -s submitted //...@2011/05/16:00:01:00,2011/05/16:07:00:00
+```
+ 
+ 
+ 
+
 ---
 ---
 # II Git
