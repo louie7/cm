@@ -3,7 +3,7 @@
 ---
 # 1. BASICS  #
 ## 1.1 stage
-    • TRD: https://github.com/google/styleguide https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/
+    TRD: https://github.com/google/styleguide https://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/
 
 ---
 
@@ -63,7 +63,19 @@ It will not create a child process, so the variable is set in the current shell.
 
 ```
 
----
+## 1.7 hardlink & [i-node](https://linuxhandbook.com/inode-linux/)
+### A hard link does not create a new file. It only provides a new name for the same data.
+> i-nodes are also a big reason why a Linux system can update without the need to reboot
+### inode is a data structure that stores all the information about a file except its name and its actual data.
+> each file in a directory there is an entry containing: the filename and the inode number associated with it.
+> Most default setting when creating a filesystem will creates 1 inode per 2K bytes of space.
+> i-nodes stores metadata about the file it refers to. 
+> This metadata contains all the information about the said file: Size, Permission, Owner/Group, Location of the hard drive, Date/time, Any other information needed.
+```bash
+# The data linked to this inode number will remain available until all names associated with it are deleted.
+# get inode free info
+df -hi .
+```
 
 # 2. COMMANDS #
 ## 2.1 find ##
