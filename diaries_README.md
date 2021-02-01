@@ -63,7 +63,7 @@ It will not create a child process, so the variable is set in the current shell.
 
 ```
 
-## 1.7 hardlink & [i-node](https://linuxhandbook.com/inode-linux/)
+## 1.7 [hardlink](https://linuxhandbook.com/hard-link/) & [i-node](https://linuxhandbook.com/inode-linux/)
 ### A hard link does not create a new file. It only provides a new name for the same data.
 > i-nodes are also a big reason why a Linux system can update without the need to reboot
 ### inode is a data structure that stores all the information about a file except its name and its actual data.
